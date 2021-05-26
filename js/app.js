@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function (){
     if (filtros.includes(texto)){
     let frame = document.createElement('iframe');
     frame.setAttribute('class','frames')
-    frame.setAttribute('src',`${texto}`+'.html')
+    frame.setAttribute('src','/html/'+`${texto}`+'.html')
     contenedor.appendChild(frame);
     }else{
     let frame = document.createElement('iframe');

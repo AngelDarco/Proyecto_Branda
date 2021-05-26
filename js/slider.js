@@ -1,4 +1,6 @@
-let btnMenu = document.getElementById('btn-menu');
+document.addEventListener('DOMContentLoaded',function(){
+  
+  let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');
 btnMenu.addEventListener('click', function(){
   mainNav.classList.toggle('mostrar');
@@ -29,6 +31,7 @@ function Prev() {
   let sliderSectionLast = sliderSection[sliderSection.length -1];
   slider.style.marginLeft = "0";
   slider.style.transition = "all 0.5s";
+  slider.style.transition = 'ease-in-out'
   setTimeout(function(){
     slider.style.transition = "none";
     slider.insertAdjacentElement('afterbegin', sliderSectionLast);
@@ -48,3 +51,5 @@ setInterval(function(){
   Next();
 }, 5000);
 
+
+});
