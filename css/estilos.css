@@ -84,13 +84,13 @@ body {
     margin-left: auto;
 }
 
-.main-header__btn {
+/* .main-header__btn {
     display: block;
     padding: 10px 30px;
     color: #454546;
     border: 1px solid #454546;
     text-decoration: none;
-}
+} */
 
 .main-header__input {
     display: block;
@@ -396,12 +396,28 @@ img {
     margin-left: auto;
 }
 
+
+/* Nuevo codigo Carro de Comparas */
+
 .main-header__btn {
     display: block;
-    padding: 10px 30px;
-    color: #454546;
+    padding: 10px;
+    color: #5b0285;
     border: 1px solid #454546;
-    text-decoration: none;
+    box-shadow: 0 0 10px #5b0285;
+    font-size: 18px;
+
+}
+
+.fa-user{
+    font-size: 20px;
+    
+}
+
+.fa-sign-out-alt{
+    font-size: 24px;
+    margin-bottom: 20px;
+
 }
 
 .main-header__input {

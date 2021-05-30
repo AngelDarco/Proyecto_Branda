@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    $saludo = '';
+    if(!isset($_SESSION["usuario"])){
+        $saludo = 'Invitado';
+    }else{
+    $saludo = $_SESSION["usuario"];
+    };
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,19 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
-
 </head>
 <body>
-<?php
-    session_start();
-   if(!isset($_SESSION["usuario"])){
-      // header("Location: login.php");
-      echo"<script>window.location='login.php'</script>";
-   }
-?>
-
-    <h1>Happines you are here</h1>
+    <h1>Estas en el carro de Compras de: <?php echo $saludo; ?> </h1>
 </body>
 </html>

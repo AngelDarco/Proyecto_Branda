@@ -5,5 +5,7 @@
 
   session_destroy();
 
-  header('Location: login.php');
+  echo"<script>alert('Sesion Cerrada');</script>";
+  echo"<script>window.location='/index.php'</script>";
+
 ?>

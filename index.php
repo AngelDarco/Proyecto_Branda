@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    $saludo = '';
+    if(!isset($_SESSION["usuario"])){
+        $saludo = 'Invitado';
+    }else{
+    $saludo = $_SESSION["usuario"];
+    };
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,10 +31,12 @@
 
 <body>
 
+
+
     <header class="main-header">
         <div class="container container--flex">
             <div class="main-header__container">
-                <h1 class="main-header__title">BEAUTY FACE</h1>
+                <h1 class="main-header__title"> BEAUTY FACE </h1>
                 <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
        
                 
@@ -30,7 +44,7 @@
 
                 <nav class="main-nav" id="main-nav">
                     <ul class="menu">
-                        <li class="menu__item"><a href="index.html" class="menu__link" target=”_blank”>Inicio</a></li>
+                        <li class="menu__item"><a href="index.php" class="menu__link" target=”_blank”>Inicio</a></li>
                         <li class="menu__item"><a href="/html/nosotros.html" class="menu__link" target=”_blank”>NOSOTROS</a></li>
                         <li class="menu__item"><a href="/html/recomendaciones.html" class="menu__link" target=”_blank”>RECOMENDACIONES</a></li>
                         <li class="menu__item"><a href="/html/maquillaje.html" class="menu__link">PRODUCTOS</a></li>
@@ -42,8 +56,12 @@
                 <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
             </div>
             <div class="main-header__container">
-                <a href="/html/login.html" class="main-header__link"><i class="fas fa-user"></i></a>
-                <a href="" class="main-header__btn">Mi carrito <i class="fas fa-shopping-cart"></i></a>
+                <a style="font-size:20px; color:#5b0285" href="/html/login.html" class="main-header__link"><i class="fas fa-user"></i></a>
+
+
+
+                <a style="color:#5b0285" href="/php/carro.php" class="main-header__btn"> <?php echo $saludo; ?> <i class="fas fa-shopping-cart"></i></a>
+                <a style="font-size:24px; color:#5b0285" href="/php/logout.php"><i class="fas fa-sign-out-alt"></i></a>
                 <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion"><i class="fas fa-search" id="buscar"></i></a>
                 <!-- Boton Buscar -->
            

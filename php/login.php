@@ -1,7 +1,8 @@
-<?php
-session_start();
-    
+<?php    
         require 'conexion.php';
+
+       
+        
 
         $query = "SELECT*FROM registrosbranda WHERE email=:email AND pass=:pass";   
         $result = $conexion->prepare($query);
@@ -13,22 +14,26 @@ session_start();
 
         $result->execute();
 
+        $username = $result->fetch(PDO::FETCH_ASSOC);
         $data = $result->rowCount();
 
         if($data!=0){
-            echo '<h2>Registro Exitoso</h2>';
-            $_SESSION["usuario"] = $data["name"];
-            
-           // header("Location: users.php");
+            session_start();
 
-            //header("Location: users.php");
-           // echo"<script>window.location='users.php'</script>";
+            
+            
+            $_SESSION["usuario"] = $username['name'];
+
+            echo '<h2>Registro Exitoso</h2>';
+            echo"<script>alert('Sesion Iniciada');</script>";
+            echo"<script>window.location.href='/index.php'</script>";
         }else{
-            echo '<h1>No se pudo Completar el Registro</h1>';
-            //header("Location: index.php");
-           // echo"<script>window.location='index.php'</script>";
+            echo"<script>alert('Error: El email o contraseña no coinciden')</script>";
+            echo"<script>window.location.href='/html/login.html'</script>";
         };   
 
+
+        mysqli_close($conexion);
 ?>
 
 

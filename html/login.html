@@ -22,7 +22,7 @@
                 <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
                 <nav class="main-nav" id="main-nav">
                     <ul class="menu">
-                        <li class="menu__item"><a href="/index.html" class="menu__link" target=”_blank”>Inicio</a></li>
+                        <li class="menu__item"><a href="/index.php" class="menu__link" target=”_blank”>Inicio</a></li>
                         <li class="menu__item"><a href="/html/nosostros.html" class="menu__link" target=”_blank”>NOSOTROS</a></li>
                         <li class="menu__item"><a href="/html/recomendaciones.html" class="menu__link" target=”_blank”>RECOMENDACIONES</a></li>
                         <li class="menu__item"><a href="/html/maquillaje.html" class="menu__link">PRODUCTOS</a></li>
@@ -36,7 +36,7 @@
     </header>
 
 
-    <form action="login.php" class="formulario" id="formulario" method="POST">
+    <form action="/php/login.php" class="formulario" id="formulario" method="POST">
         <h1>Iniciar Sesion</h1>
         <div class="contenedor">
 
@@ -73,14 +73,14 @@
             </div>
 
             <div class="formulario__grupo formulario__grupo-btn-enviar">
-                <button type="submit" class="formulario__btn" href="/php/conexion.php" >Enviar</button>
+                <button type="submit" class="formulario__btn" >Enviar</button>
                 <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
             </div>
             <p>¿No tienes una cuenta?<a class="link" href="/html/registro.html"> Registrate</a></p>
         </div>
     </form>
 
-    <script src="/js/formulario.js"></script>
+    <!-- <script src="/js/formulario.js"></script> -->
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
