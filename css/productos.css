@@ -122,6 +122,19 @@ img {
   text-align: center;
   position: relative;
 }
+
+
+.agregado::after{
+  content: "Agregado";
+  background: #fdf902;
+  padding: 10px;
+  width: 60px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(253, 0, 0);
+}
+
 .product:before {
   content: "New";
   background: #F475CB;
