@@ -1,9 +1,6 @@
 <?php    
         require 'conexion.php';
 
-       
-        
-
         $query = "SELECT*FROM registrosbranda WHERE email=:email AND pass=:pass";   
         $result = $conexion->prepare($query);
         $email = $_POST['email'];
@@ -14,15 +11,14 @@
 
         $result->execute();
 
-        $username = $result->fetch(PDO::FETCH_ASSOC);
+        $userdata = $result->fetch(PDO::FETCH_ASSOC);
         $data = $result->rowCount();
 
         if($data!=0){
             session_start();
 
-            
-            
-            $_SESSION["usuario"] = $username['name'];
+            $_SESSION["usuario"] = $userdata['name'];
+            $_SESSION["id"] = $userdata['id'];
 
             echo '<h2>Registro Exitoso</h2>';
             echo"<script>alert('Sesion Iniciada');</script>";

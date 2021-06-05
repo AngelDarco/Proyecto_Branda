@@ -3,6 +3,10 @@
     $saludo = '';
     if(!isset($_SESSION["usuario"])){
         $saludo = 'Invitado';
+       ?>
+      <script src="/js/carro.js"></script>
+     
+    <?php   
     }else{
     $saludo = $_SESSION["usuario"];
     };
@@ -22,7 +26,10 @@
     <!-- Nuevo Codigo -->
     <script src="/js/slider.js"></script>
     <script src="/js/app.js"></script>
+    <script src="/js/sweetalert2.all.min.js"></script>
+    <script src="/js/add.js"></script>
     
+
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/productos.css">
     <link rel="stylesheet" href="/css/buscador.css">
@@ -125,40 +132,42 @@
             <h2 class="main-title">Te presentamos nuestros favoritos</h2>
             <section class="container-products">
                 <div class="product">
-                    <img src="/img/producto1.jpg">
+                    <img class="myimg" src="/img/producto1.jpg">
                     <div class="product__description">
                         <h3 class="product__title">HIDRADERM AGUA DE AVENA-ROSAS</h3>
                         <P class="product__txt">Hidratación</P>
                         <span class="product__price">$500.00</span>
                     </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
+                    <i id="1" class="product__icon fas fa-cart-plus"></i>
                 </div>
                 <div class="product">
-                    <img src="/img/producto2.jpg">
+                    <img class="myimg" src="/img/producto2.jpg">
                     <div class="product__description">
                         <h3 class="product__title">HIDRADERM HYAL CREMA FACIAL</h3>
                         <P class="product__txt">Hidratación</P>
                         <span class="product__price">$800.00</span>
                     </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
+                    <i id="2" class="product__icon fas fa-cart-plus"></i>
                 </div>
+
                 <div class="product">
-                    <img src="/img/producto3.jpg">
+                    <img class="myimg" src="/img/producto3.jpg">
                     <div class="product__description">
                         <h3 class="product__title">FLASH NUDE 02 GOLD</h3>
                         <P class="product__txt">Maquillaje</P>
                         <span class="product__price">$1,250.00</span>
                     </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
+                    <i id="3" class="product__icon fas fa-cart-plus"></i>
                 </div>
+
                 <div class="product">
-                    <img src="/img/producto4.jpg">
+                    <img class="myimg" src="/img/producto4.jpg">
                     <div class="product__description">
                         <h3 class="product__title">FLASH NUDE POWDER</h3>
                         <P class="product__txt">Maquillaje</P>
                         <span class="product__price">$1,250.00</span>
                     </div>
-                    <i class="product__icon fas fa-cart-plus"></i>
+                    <i id="4" class="product__icon fas fa-cart-plus"></i>
                 </div>
             </section>
             <section class="container__testimonials">
