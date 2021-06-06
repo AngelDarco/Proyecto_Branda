@@ -6,8 +6,11 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="icon" type="image/jpeg" href="img/logo2.jpeg">
-  <link rel="stylesheet" href="/css/productos.css">
-
+  
+  <script src="/js/carro.js"></script>
+  <script src="/js/add.js"></script>
+<script src="/js/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="/css/productos.css">
 </head>
 <body>
 	<header class="main-header">
@@ -17,7 +20,7 @@
           <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
           <nav class="main-nav" id="main-nav">
             <ul class="menu">
-              <li class="menu__item"><a href="/index.html" class="menu__link">Inicio</a></li>
+              <li class="menu__item"><a href="/index.php" class="menu__link">Inicio</a></li>
               <li class="menu__item"><a href="/html/maquillaje.html" class="menu__link">Maquillaje</a></li>
               <li class="menu__item"><a href="/html/hidratacion.html" class="menu__link">Hidratación</a></li>
               <li class="menu__item"><a href="/html/tonicos.html" class="menu__link">Tonicos</a></li>
@@ -47,7 +50,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$850.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="53" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto28.jpg">
@@ -56,7 +59,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$1,600.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="54" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto29.jpg">
@@ -65,7 +68,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$870.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="55" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto30.jpg">
@@ -74,7 +77,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$450.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="56" class="product__icon fas fa-cart-plus"></i>
           </div>
         </section>
 
@@ -86,7 +89,7 @@
               <P class="product__txt">Agua</P>
               <span class="product__price">$830.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="57" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto32.jpg">
@@ -95,7 +98,7 @@
               <P class="product__txt">Aceite</P>
               <span class="product__price">$600.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="58" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto33.jpg">
@@ -104,7 +107,7 @@
               <P class="product__txt">Aceite Limpiador</P>
               <span class="product__price">$470.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="59" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto34.jpg">
@@ -113,7 +116,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$780.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="60" class="product__icon fas fa-cart-plus"></i>
           </div>
         </section>
 
@@ -125,7 +128,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$410.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="61" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto36.jpg">
@@ -134,7 +137,7 @@
               <P class="product__txt">Aceite</P>
               <span class="product__price">$480.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="62" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto37.jpg">
@@ -143,7 +146,7 @@
               <P class="product__txt">Loción</P>
               <span class="product__price">$410.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="63" class="product__icon fas fa-cart-plus"></i>
           </div>
           <div class="product">
             <img src="/img/producto38.jpg">
@@ -152,7 +155,7 @@
               <P class="product__txt">Aceite</P>
               <span class="product__price">$390.00</span>
             </div>
-            <i class="product__icon fas fa-cart-plus"></i>
+            <i id="64" class="product__icon fas fa-cart-plus"></i>
           </div>
         </section> 
 </body>

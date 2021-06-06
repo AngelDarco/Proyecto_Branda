@@ -9,8 +9,9 @@ try{
     }
     
     if(isset($_SESSION['usuario'])){
-        $sql = "SELECT*FROM productosbranda";
+        $sql = "SELECT*FROM productosbranda WHERE id = :id";
         $result = $conexion->prepare($sql);
+        $result->bindParam(':id',$_SESSION['id']);
         $result->execute();
 
         while($row=$result->fetch()){
