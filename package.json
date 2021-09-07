@@ -1,7 +1,7 @@
 {
   "name": "htdocs",
   "version": "2.0.0",
-  "description": "Reestructuracion de proyectobranda 1.0",
+  "description": "Reestructuración de proyectobranda 1.0",
   "main": "test.js",
   "scripts": {
     "test": "jest --verbose"
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/eme92/proyectobranda#readme",
   "dependencies": {
+    "css-loader": "^6.2.0",
+    "servor": "^4.0.2",
     "typescript": "^4.4.2",
     "webpack": "^5.52.0",
     "yarn": "^1.22.11"

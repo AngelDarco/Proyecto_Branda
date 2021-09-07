@@ -1,1 +1,5 @@
+#Modulos de Node
 /node_modules
+
+#Claves
+/.env
