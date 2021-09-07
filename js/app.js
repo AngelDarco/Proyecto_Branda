@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function (){
     const btnBuscar = document.getElementById('buscar');
     const contenedor = document.querySelector('.container__buscador');
