@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/eme92/proyectobranda/issues"
   },
-  "homepage": "https://github.com/eme92/proyectobranda#readme"
+  "homepage": "https://github.com/eme92/proyectobranda#readme",
+  "dependencies": {
+    "typescript": "^4.4.2",
+    "webpack": "^5.52.0",
+    "yarn": "^1.22.11"
+  }
 }
