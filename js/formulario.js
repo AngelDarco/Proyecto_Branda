@@ -1,4 +1,6 @@
-let btnMenu = document.getElementById('btn-menu');
+export function formulario(){
+
+    let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');
 btnMenu.addEventListener('click', function() {
     mainNav.classList.toggle('mostrar');
@@ -83,3 +85,5 @@ formulario.addEventListener('submit', (e) => {
         }, 5000);
     }
 });
+
+};

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+export function add(){
 const product = document.querySelectorAll('.product');
 product.forEach(e=>{
         let nodo =  e.lastElementChild;
@@ -51,4 +51,4 @@ product.forEach(e=>{
 });
 
 
-});
+};

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{
+export function carro(){
 
     const productos = document.querySelectorAll('.product__icon');
     let array = [];
@@ -22,5 +22,4 @@ document.addEventListener('DOMContentLoaded',()=>{
             });
         });
 
-
-});
+};

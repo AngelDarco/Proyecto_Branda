@@ -1,10 +1,10 @@
-export {app} from "../js/app.js"; 
-export {add} from "../js/add.js";
-export {carro} from "../js/carro.js";
-export {delete} from "../js/delete.js";
-export {formulario} from "../js/formulario.js";
-export {slider} from "../js/slider.js";
-export {sweetalert2} from "../js/sweetalert2.all.min.js";
+import {app} from "../js/app.js"; 
+import {add} from "../js/add.js";
+import {carro} from "../js/carro.js";
+import {eliminar} from "../js/delete.js";
+import {formulario} from "../js/formulario.js";
+import {slider} from "../js/slider.js";
+import {sweetalert2} from "../js/sweetalert2.all.min.js";
 
 
 import "../css/buscador.css";

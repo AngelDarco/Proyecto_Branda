@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function (){
+export function app(){
     const btnBuscar = document.getElementById('buscar');
     const contenedor = document.querySelector('.container__buscador');
     const btnCerrar = document.querySelector('.btn__cerrar');
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function (){
 });
 
 
-}); //Fin AddEventListener
+}; //Fin AddEventListener
 
 
 

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',function(){
+export function slider(){
   
   let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');
@@ -51,5 +51,4 @@ setInterval(function(){
   Next();
 }, 5000);
 
-
-});
+};
