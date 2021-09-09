@@ -4,8 +4,6 @@ export function app(){
     const btnCerrar = document.querySelector('.btn__cerrar');
     const buscador = document.querySelector('.main-header__input');
 
-   
-
     btnBuscar.addEventListener('click', ()=>{
     contenedor.classList.remove('ocultar');
 
