@@ -5,7 +5,7 @@
     <title>TIENDA ONLINE</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="img/logo2.jpeg">
+    <link rel="icon" type="image/jpeg" href="./assets/img/logo2.jpeg">
 
 </head>
 
@@ -36,15 +36,18 @@
                 <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
             </div>
             <div class="main-header__container">
-                <a style="font-size:20px; color:#5b0285" href="/html/login.html" class="main-header__link"><i class="fas fa-user"></i></a>
 
-
-
-                <a style="color:#5b0285" href="/php/carro.php" class="main-header__btn"> <?php echo $saludo; ?> <i class="fas fa-shopping-cart"></i></a>
-                <a style="font-size:24px; color:#5b0285" href="/php/logout.php"><i class="fas fa-sign-out-alt"></i></a>
-                <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion"><i class="fas fa-search" id="buscar"></i></a>
+                <div class="sesion__usuario">
+                    <a  href="/html/login.html"><i class="fas fa-user"></i></a>
+                    <a  href="/php/carro.php" > <i class="fas fa-shopping-cart"></i></a>
+                    <a  href="/php/logout.php"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+                
+                <div class="buscar__productos">
+                    <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion"></a>
+                    <i class="fas fa-search" id="buscar"></i>
+                </div>
                 <!-- Boton Buscar -->
-           
            
             </div>
         </div>
@@ -84,8 +87,10 @@
                 </div>
             </div>
         </div>
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        <div class="slider__btn slider__btn--right" id="btn-right"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </div>
+        <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        </div>
     </div>
     <main class="main">
         <div class="container">

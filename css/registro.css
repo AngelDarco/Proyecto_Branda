@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Roboto', sans-serif;
     background: #E5E5E5;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 
-/* Estilos del Menu */
+/* Estilos del Menu 
 
 .main-nav {
     opacity: 0;
@@ -118,7 +118,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-}
+} */
 
 @media(min-width:800px) {
     .formulario {

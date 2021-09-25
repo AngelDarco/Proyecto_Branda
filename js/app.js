@@ -35,11 +35,11 @@ export function app(){
     btnCerrar.addEventListener('click',()=>{
     contenedor.classList.add('ocultar');
     contenedor.removeChild(contenedor.lastChild);
-    contador=0;
+    //contador=0;
 });
 
 
-}; //Fin AddEventListener
+}
 
 
 
