@@ -110,7 +110,7 @@ img {
   padding: 0 20px;
 } */
 
-/* ESTILOS DE PRODUCTOS */
+/* ESTILOS DE PRODUCTOS 
 .container-products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -165,7 +165,9 @@ img {
 }
 .product:hover .product__icon {
   color: #F475CB;
-}
+}*/
+
+
 .container__testimonials{
   text-align: center;
   background: #F7F7F7;

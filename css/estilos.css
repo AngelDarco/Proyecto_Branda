@@ -429,7 +429,7 @@ img {
 
 .container-products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
 }
 
@@ -475,6 +475,8 @@ img {
 .product:hover .product__icon {
     color: #F475CB;
 }
+
+
 
 .container__testimonials {
     text-align: center;
