@@ -1,11 +1,17 @@
-import  "../js/app.js"; 
-import  "../js/add.js";
-import  "../js/carro.js";
-import  "../js/delete.js";
-import  "../js/formulario.js";
-import   "../js/slider.js";
+import app from "../js/app.js"; 
+import add from "../js/add.js";
+import carro from "../js/carro.js";
+import eliminar from "../js/delete.js";
+import formulario from "../js/formulario.js";
+import slider from   "../js/slider.js";
 import "../js/sweetalert2.all.min.js";
 
+app();
+add();
+carro();
+eliminar();
+formulario();
+slider();
 
 import "../css/buscador.css";
 import "../css/estilos.css";

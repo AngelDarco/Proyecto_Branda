@@ -1,4 +1,4 @@
-export function add(){
+export default function add(){
 const product = document.querySelectorAll('.product');
 product.forEach(e=>{
         let nodo =  e.lastElementChild;
@@ -50,5 +50,4 @@ product.forEach(e=>{
      });
 });
 
-
-};
+}

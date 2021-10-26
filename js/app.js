@@ -1,5 +1,4 @@
 export default function app(){
-        alert("Javascript Working ...")
     const btnBuscar = document.getElementById('buscar');
     const contenedor = document.querySelector('.container__buscador');
     const btnCerrar = document.querySelector('.btn__cerrar');
