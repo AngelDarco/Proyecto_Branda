@@ -1,4 +1,4 @@
-export function formulario(){
+export default function formulario(){
 
     let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');

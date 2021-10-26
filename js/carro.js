@@ -1,4 +1,4 @@
-export function carro(){
+export default function carro(){
 
     const productos = document.querySelectorAll('.product__icon');
     let array = [];
@@ -22,4 +22,4 @@ export function carro(){
             });
         });
 
-};
+}

@@ -1,4 +1,4 @@
-export function eliminar(){
+export default function eliminar(){
 const borrar = document.querySelectorAll('.borrar');
 
 borrar.forEach(e=>{
@@ -43,4 +43,4 @@ borrar.forEach(e=>{
     });
 });
 
-};
+}

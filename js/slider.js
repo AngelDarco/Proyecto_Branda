@@ -1,4 +1,4 @@
-export function slider(){
+export default function slider(){
   
   let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');
