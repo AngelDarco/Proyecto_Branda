@@ -9,6 +9,7 @@
     }, 
     "parser": "babel-eslint", 
     "rules": { 
+      "useEslint": false,
       "no-console": "warn", 
       "no-use-before-define": "warn", 
       "spaced-comment": "warn" 
