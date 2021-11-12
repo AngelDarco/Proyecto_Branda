@@ -1,8 +1,18 @@
-export default function app(){
+window.addEventListener("DOMContentLoaded",()=>{
+
+    
+
+})
+
     const btnBuscar = document.getElementById('buscar');
     const contenedor = document.querySelector('.container__buscador');
+                
     const btnCerrar = document.querySelector('.btn__cerrar');
     const buscador = document.querySelector('.main-header__input');
+
+
+
+        function buscar(){
 
     btnBuscar.addEventListener('click', ()=>{
     contenedor.classList.remove('ocultar');
@@ -30,16 +40,16 @@ export default function app(){
             //Resetea el buscador
     buscador.value = buscador.innerHTML="";
 });
-
+        }
+ 
+        function ocultar() {
+        
             //Oculta el Div de los resultados
     btnCerrar.addEventListener('click',()=>{
     contenedor.classList.add('ocultar');
     contenedor.removeChild(contenedor.lastChild);
     
-});
-
-
-}
-
+        });
+    }
 
 

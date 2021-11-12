@@ -1,10 +1,12 @@
-export default function formulario(){
+window.addEventListener("DOMContentLoaded",()=>{
+
+function formulario(){
 
     let btnMenu = document.getElementById('btn-menu');
 let mainNav = document.getElementById('main-nav');
-btnMenu.addEventListener('click', function() {
+/* btnMenu.addEventListener('click', function() {
     mainNav.classList.toggle('mostrar');
-});
+}); */
 
 
 const formulario = document.getElementById('formulario');
@@ -62,7 +64,7 @@ inputs.forEach((input) => {
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
 });
-
+/* 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -85,5 +87,7 @@ formulario.addEventListener('submit', (e) => {
         }, 5000);
     }
 });
-
+ */
 };
+    formulario();
+})

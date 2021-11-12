@@ -1,4 +1,8 @@
-export default function carro(){
+window.addEventListener("DOMContentLoaded",()=>{
+
+
+
+function carro(){
 
     const productos = document.querySelectorAll('.product__icon');
     let array = [];
@@ -23,3 +27,5 @@ export default function carro(){
         });
 
 }
+    carro();
+})

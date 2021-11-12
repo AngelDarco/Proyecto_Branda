@@ -1,10 +1,4 @@
-export default function slider(){
-  
-  let btnMenu = document.getElementById('btn-menu');
-let mainNav = document.getElementById('main-nav');
-btnMenu.addEventListener('click', function(){
-  mainNav.classList.toggle('mostrar');
-});
+window.addEventListener("DOMContentLoaded",()=>{
 
 const slider = document.querySelector("#slider");
 let sliderSection = document.querySelectorAll(".slider__section");
@@ -51,4 +45,5 @@ setInterval(function(){
   Next();
 }, 5000);
 
-};
+
+})
