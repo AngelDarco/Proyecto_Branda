@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+    @font-face {
+        font-family: "Inconsolata";
+        src: url(/assets/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+    }
+
 body {
     font-family: 'Roboto', sans-serif;
     background: #E5E5E5;
@@ -281,29 +287,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* @import url(https://fonts.googleapis.com/css?family=Inconsolata);
-@font-face {
-    font-family: "Inconsolata";
-    src: url(../fonts/inconsolata.ttf);
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url(../fonts/Poppins-Bold.ttf);
-}
- */
 * {
     box-sizing: border-box;
 }
