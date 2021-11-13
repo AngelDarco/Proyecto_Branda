@@ -639,7 +639,7 @@ img {
         justify-content: space-between;
         margin-bottom: 20px;
     }
-    .sesion__usuario a i{
+    .sesion__usuario i{
         width: auto;
         height: auto;
         font-size: 25px;
@@ -647,7 +647,7 @@ img {
         padding: 5px;
         border-bottom: 3px solid #f700ff33;
     }
-
+    
     .buscar__productos{
         width: 100%;
         height: auto;
@@ -655,7 +655,7 @@ img {
         flex-flow: row nowrap;
         border: 1px solid #ffd905;
     }
-    .buscar__productos i{
+    .buscar__productos a{
         width: 20%;
         height: auto;
         font-size: 20px;

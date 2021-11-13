@@ -17,9 +17,42 @@
 
 <body>
 
-    <header>
-        <iframe src="/html/header.html" frameborder="0" width="100%"></iframe>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="main-header__container">
+                <h1 class="main-header__title"> BEAUTY FACE </h1>
+                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="../index.html" class="menu__link" target=”_blank”>Inicio</a></li>
+                        <li class="menu__item"><a href="/html/nosotros.html" class="menu__link" target=”_blank”>NOSOTROS</a></li>
+                        <li class="menu__item"><a href="/html/recomendaciones.html" class="menu__link" target=”_blank”>RECOMENDACIONES</a></li>
+                        <li class="menu__item"><a href="/html/catalogo.html" class="menu__link" target=”_blank”>PRODUCTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header__container">
+                <span class="main-header__txt">Atención al cliente</span>
+                <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
+            </div>
+            <div class="main-header__container">
+
+                <div class="sesion__usuario">
+                    <a  href="/html/login.html" target="_blank"><i class="fas fa-user"></i></a>
+                    <a  href="/html/carro.html" target="_blank"> <i class="fas fa-shopping-cart"></i></a>
+                    <a  href="/php/logout.php" target="_blank"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+                
+                <div class="buscar__productos">
+                    <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion">
+                    <i class="fas fa-search" id="buscar"></i></a>
+                </div>
+
+            </div>
+        </div>
     </header>
+
 
 
     <div class="container-slider">
@@ -66,17 +99,10 @@
     <main class="main">
         <div class="container">
 
-            <!-- Codigo Nuevo 
+            <!-- Codigo Container Buscador -->
             <div class="container__buscador ocultar" id="redireccion">
                 <i class="fas fa-times btn__cerrar" ></i>  
-           
-            </div>-->
-
-
-
-
-
-
+            </div>
 
             <h2 class="main-title">Te presentamos nuestros favoritos</h2>
             <section class="container-products">
@@ -190,8 +216,8 @@
 
          <!-- Webpack -->
     <script src="./js/add.js"></script>
-<!--     <script src="./js/buscador.js"></script>
- -->    <script src="./js/carro.js"></script>
+    <script src="./js/buscador.js"></script>
+    <script src="./js/carro.js"></script>
     <script src="./js/delete.js"></script>
     <script src="./js/formulario.js"></script>
     <script src="./js/slider.js"></script>
