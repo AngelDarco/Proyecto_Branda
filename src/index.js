@@ -18,4 +18,3 @@ import "../css/estilos.css";
 import "../css/productos.css";
 import "../css/registro.css";
 import "../css/sliderSecundario.css";
-
