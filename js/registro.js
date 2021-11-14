@@ -13,7 +13,15 @@ window.addEventListener("DOMContentLoaded",()=>{
     })
         .then(res => res.json())
         .then(data => {
-            if (data=="UserAdd"){
+            if(data ==="Registrado"){
+                    Swal.fire({
+                        position: 'center',
+                        icon: 'warning',
+                        title: 'El Usuario ya esta registrado',
+                        showConfirmButton: false,
+                        timer: 1500,
+                    });
+            }else if (data==="UserAdd"){
                 Swal.fire({
                     title: 'Usuario Registrado',
                     text: "Quieres iniciar Sesion!",
@@ -26,14 +34,26 @@ window.addEventListener("DOMContentLoaded",()=>{
                     if (result.isConfirmed) window.location='/html/login.html';
                     else window.location='/index.html';
                     })
-                        form.reset();
+                        formulario.reset();
+            }else if(data==="CamposVacios"){
+                Swal.fire({
+                    position: 'center',
+                    icon: 'error',
+                    title: 'Por favor llena todos los Campos',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
             }
-            console.log(data);
         })
         .catch( err => {
             console.log(err);
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Error no especificado: '+err,
+                showConfirmButton: false,
+                timer: 1500
+            });
         });
-
     });
-
 })
