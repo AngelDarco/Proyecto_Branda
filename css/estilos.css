@@ -637,7 +637,6 @@ img {
         flex-flow: row;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 20px;
     }
     .sesion__usuario i{
         width: auto;
@@ -648,6 +647,19 @@ img {
         border-bottom: 3px solid #f700ff33;
     }
     
+    .sesion{
+        width: 100%;
+        height: auto;
+    }
+    .sesion h3{
+        text-align: left;
+        padding: 5px;
+        letter-spacing: 2px;
+        text-shadow: 2px 0 0 #1ed12d,
+                     4px 0 0 #EC6FFF,
+                     6px 0 0 #ffd905
+    }
+
     .buscar__productos{
         width: 100%;
         height: auto;
