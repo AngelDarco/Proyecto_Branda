@@ -1,51 +1,35 @@
-window.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener('DOMContentLoaded',()=>{
 
-    document.getElementById('carro').addEventListener('click',()=>{
-        fetch('/php/sesion.php')
-        .then(res => res.json())
-        .then(data =>{
-            let salida = data.split(';');
-        let id = salida[1];
-        let user = salida[0];
+    const caja = document.querySelector('.container-products');
+    const template = document.querySelector('.template').content;
+    const fragment = new DocumentFragment();
 
-            if (data==='SesionNoIniciada'&&isNaN(id)){
-                Swal.fire({
-                    position: 'center',
-                    icon: 'warning',
-                    title: 'Debes Iniciar Sesion Primero',
-                    showConfirmButton: false,
-                    timer: 1000,
-                });
-            }else{
-                window.location='/html/carro.html';
-            }
-        })
-        .catch(err => console.log(err));
-    });
+    fetch('/php/carro.php')
+    .then(res => res.json())
+    .then(data =>{
 
-function carro(){
+        data.forEach(item =>{
 
-    const productos = document.querySelectorAll('.product__icon');
-    let array = [];
+        template.querySelector('.myimg').setAttribute('src',item.img);
+        template.querySelector('.product__title').innerHTML=item.nombre;
+        template.querySelector('.product__txt').innerHTML=item.seccion;
+        template.querySelector('.product__price').innerHTML=item.precio;
+        template.querySelector('.product__icon').setAttribute('id',item.id);
+   
 
-        productos.forEach(item=>{
-                item.addEventListener('click', (e)=>{
-                producto = item.parentNode;
-                producto.classList.toggle('agregado');
-
-                if(producto.classList.contains('agregado')){
-
-                    array.push(producto);
-                    console.log('agregado');
-                }else{
-
-
-                    console.log('Eliminado');
-                }
-
-            });
+        const clone = template.cloneNode(true);
+        fragment.appendChild(clone);
+        caja.appendChild(fragment);
         });
+    })
+    .catch(err => console.log(err))
 
-}
-    carro();
+    fetch('/php/sesion.php')
+    .then(res => res.json())
+    .then(data =>{
+        let nombre = data.split(';');
+        let user = nombre[0];
+        document.getElementById('user').innerHTML=user;
+    })
+
 })

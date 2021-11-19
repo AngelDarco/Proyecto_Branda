@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/productos.css">
+
 </head>
 <body>
-    <h1>in the Car ...</h1>
+    <h1>in the Car from <p id="user"></p></h1>
+
+    <div class="container-products">
+        <template class="template">
+            <div class="product">
+                <img class="myimg" src="/assets/img/producto3.jpg">
+                <div class="product__description">
+                    <h3 class="product__title">FLASH NUDE 02 GOLD</h3>
+                    <P class="product__txt">Maquillaje</P>
+                    <span class="product__price">$1,250.00</span>
+                </div>
+                <i id="3" class="product__icon fas fa-cart-plus"></i>
+            </div>
+        </template>
+    </div>
+
 </body>
+    <script src="/js/carro.js"></script>
 </html>
