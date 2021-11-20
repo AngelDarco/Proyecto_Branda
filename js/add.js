@@ -5,7 +5,6 @@ product.forEach(e=>{
         let nodo =  e.lastElementChild;
         nodo.addEventListener('click', (z)=>{
         let desc = e.childNodes[3];
-                console.log(nodo);
 
         let id = z.target.getAttribute('id');
         let img = e.childNodes[1].getAttribute('src');  

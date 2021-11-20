@@ -466,6 +466,16 @@ img {
 .product__icon {
     display: block;
     margin-top: 10px;
+    font-size: 2rem;
+    color: #7bff00;
+}
+
+.product .fa-trash{
+    display: block;
+    margin-top: 10px;
+    font-size: 2rem;
+    color: #f70052;
+
 }
 
 .product:hover .product__icon {

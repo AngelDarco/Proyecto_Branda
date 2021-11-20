@@ -1,59 +1,34 @@
 window.addEventListener("DOMContentLoaded",()=>{
-    let formulario = document.getElementById('formulario');
+    const log = document.getElementById('login');
+    log.addEventListener('click',(e)=>{
+        console.log(e.isTrusted);
+        sesion(e);
+    });sesion(e=false);
+        
+});
 
-    formulario.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        let data = new FormData(formulario);
+    function sesion(e){
+        fetch('/php/sesion.php')
+    .then(res => res.json())
+    .then(data =>{
+        let salida = data.split(';');
+        let id = salida[1];
+        let user = salida[0];
 
-        fetch ('/php/login.php',{
-            method:'POST',
-            body: data
-        })
-            .then(resp=>resp.json())
-            .then(data=>{
-                
-                if(data==="Registrado"){
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'success',
-                        title: 'Session Iniciada',
-                        showConfirmButton: false,
-                        timer: 1500,
-                    });
-                        window.location='/index.html';
-                }else if(data==="NoRegistrado"){
-                    Swal.fire({
-                        title: 'Usuario No Registrado',
-                        text: "Debes Registrarte Primero!",
-                        icon: 'error',
-                        showCancelButton: true,
-                        confirmButtonColor: '#3085d6',
-                        cancelButtonColor: '#d33',
-                        confirmButtonText: 'Registrar',
-                        cancelButtonText: 'Reintentar'
-                        }).then((result) => {
-                        if (result.isConfirmed) window.location='/html/registro.html';
-                        })
-                }else{
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'error',
-                        title: 'Error no Especificado',
-                        showConfirmButton: false,
-                        timer: 1500,
-                    });
-                }
-            })
-            .catch(err =>{
-                Swal.fire({
-                    position: 'center',
-                    icon: 'error',
-                    title: 'Error '.err,
-                    showConfirmButton: false,
-                    timer: 1500,
-                });
-                console.log(err);
+        if (!isNaN(id)&&data!="SesionNoIniciada"){
+            document.getElementById('usuario').innerHTML=user;
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Session Iniciada Como: '+ user,
+                showConfirmButton: false,
+                timer: 500,
             });
-    });
-
-})
+        }else if(e.isTrusted){
+            window.location='/html/login.html';
+        }
+    })
+    .catch(err=>{
+        console.error("Error en la Matrix ",err);
+    })
+    };
