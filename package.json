@@ -5,7 +5,9 @@
   "main": "test.js",
   "scripts": {
     "test": "jest --verbose",
-    "build": "webpack --mode=development"
+    "build": "webpack --mode production",
+    "builddev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open "
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
+    "html-loader": "^3.0.1",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0"

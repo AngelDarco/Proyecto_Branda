@@ -2,7 +2,7 @@ import app from "../js/app.js";
 import add from "../js/add.js";
 import carro from "../js/carro.js";
 import eliminar from "../js/delete.js";
-import formulario from "../js/formulario.js";
+//import formulario from "../js/formulario.js";
 import slider from   "../js/slider.js";
 import "../js/sweetalert2.all.min.js";
 
@@ -10,7 +10,7 @@ app();
 add();
 carro();
 eliminar();
-formulario();
+//formulario();
 slider();
 
 import "../css/buscador.css";
