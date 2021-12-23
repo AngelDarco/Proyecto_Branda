@@ -13,18 +13,33 @@ module.exports={
 
     module: {
         rules:[
+            
+            { test: /\.m?js$/i,
+              exclude: /(node_modules|bower_components)/,
+              use:{
+                loader: 'babel-loader', 
+                options:{
+                    presets:['@babel/preset-env']
+                  }
+                },
+              },
+
             { test: /\.css$/i,
               use: ["style-loader", "css-loader"] },
-
-            { test: /\.js$/i,
-              loader: 'babel-loader', },
             
-              { test: /\.html$/i,
-              loader: "html-loader"}
+            { test: /\.html$/i,
+              loader: "html-loader"},
+
+            /* { test: /\.php$/,
+              loader:[
+                'html-minify',
+                'php-loader'
+              ]
+            } */
 
 
 
-              
+
             ]
     }
 }

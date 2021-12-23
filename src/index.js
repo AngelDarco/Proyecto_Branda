@@ -1,3 +1,5 @@
+//var fileContent = require("php!./file.php");
+
 import app from "../js/app.js"; 
 import add from "../js/add.js";
 import carro from "../js/carro.js";
