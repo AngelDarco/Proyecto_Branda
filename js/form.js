@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             })
                 .then(resp=>resp.json())
                 .then(data=>{
-                    
+                    console.log(data)
                     if(data==="Registrado"){
                         Swal.fire({
                             position: 'center',
@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                             timer: 1500,
                         });
                             window.location='/index.html';
+
                     }else if(data==="NoRegistrado"){
                         Swal.fire({
                             title: 'Usuario No Registrado',
@@ -35,7 +36,15 @@ document.addEventListener('DOMContentLoaded',()=>{
                             }).then((result) => {
                             if (result.isConfirmed) window.location='/html/registro.html';
                             })
-                    }else{
+                    }else if(data==="Vacio"){
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'error',
+                                title: 'Campos Vacios',
+                                showConfirmButton: false,
+                                timer: 1500,
+                            });
+                        }else{
                         Swal.fire({
                             position: 'center',
                             icon: 'error',
@@ -46,10 +55,11 @@ document.addEventListener('DOMContentLoaded',()=>{
                     }
                 })
                 .catch(err =>{
+                    
                     Swal.fire({
                         position: 'center',
                         icon: 'error',
-                        title: 'Error '.err,
+                        title: 'Error',
                         showConfirmButton: false,
                         timer: 1500,
                     });

@@ -11,5 +11,5 @@ $db_pass = "";
         $conexion->exec("SET CHARACTER SET utf8");
          /* echo "Connection Successfully"; */ 
     } catch (Exception $e) {
-        echo "ERROR 404 ". $e->getMessage. $e->getErrorCode. $e->getError;
+        echo "ERROR 404 ". $e->getMessage(). $e->getErrorCode(). $e->getError();
     }
