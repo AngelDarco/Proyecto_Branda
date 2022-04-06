@@ -1,47 +1,18 @@
 {
-  "name": "htdocs",
-  "version": "2.0.0",
-  "description": "Reestructuración de proyectobranda 1.0",
-  "main": "test.js",
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "test": "jest --verbose",
-    "build": "webpack --mode production",
-    "builddev": "webpack --mode development",
-    "start": "webpack-dev-server --mode development --open "
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eme92/proyectobranda.git"
-  },
-  "author": "Luis Angel Darco",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eme92/proyectobranda/issues"
-  },
-  "homepage": "https://github.com/eme92/proyectobranda#readme",
   "dependencies": {
-    "css-loader": "^6.2.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "servor": "^4.0.2",
-    "standard": "^16.0.3",
-    "typescript": "^4.4.2",
-    "yarn": "^1.22.11"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.3",
-    "eslint": "^7.32.0",
-    "html-loader": "^3.0.1",
-    "html-webpack-plugin": "^5.5.0",
-    "style-loader": "^3.2.1",
-    "webpack": "^5.64.2",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.7.4"
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.9.0"
   }
 }
