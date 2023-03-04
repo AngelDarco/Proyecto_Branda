@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.btn__cerrar{
+    position: absolute;
+    display: block;
+    height: fit-content;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.container__buscador{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    height: 100vh;
+    margin: 10% auto;
+    box-shadow: 0 0 10px #F0F;
+}
+
+
+.ocultar{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.frames{
+    width: 100%;
+    height: auto;
+    
+}
+
