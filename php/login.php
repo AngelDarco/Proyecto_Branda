@@ -1,5 +1,5 @@
 <?php
-    require 'conexion.php';
+    require_once 'conexion.php';
     
     $email = $_POST['email'];
     $pass = $_POST['pass'];
@@ -24,8 +24,8 @@
             else {
                 echo json_encode("NoRegistrado");
                 $result2->closeCursor();
-                $conexion->null;
-                $sql2->null;
+                // $conexion->null;
+                // $sql2->null;
             };
             
         } catch (Exception $e) {
