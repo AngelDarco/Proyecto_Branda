@@ -1,19 +1,8 @@
-document.addEventListener("DOMContentLoaded",()=>{
+export default function session (login, logout, nickname) {
+  const session = window.localStorage.getItem('BeautyFaceSession')
 
-    fetch('/php/sesion.php')
-    .then(res => res.json())
-    .then(data =>{
-        let salida = data.split(';');
-        let id = salida[1];
-        let user = salida[0];
-
-        if (!isNaN(id)&&data!="SesionNoIniciada"){
-            document.getElementById('usuario').innerHTML=user;
-        }
-    })
-    .catch(err=>{
-        console.error("Error en la Matrix ",err);
-    })
-
-
-})
+  if (!session) return
+  nickname.innerHTML = session
+  login.classList.add('hide')
+  logout.classList.remove('hide')
+}

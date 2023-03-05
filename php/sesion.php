@@ -1,9 +1,5 @@
 <?php
 session_start();
-
-    $id = $_SESSION['id'];
-    $user = $_SESSION['usuario'];
-
-    if (isset($user)&&isset($id))
-        echo json_encode($user.';'.$id);
+    if (isset($_SESSION['id'])&&isset($_SESSION['usuario']))
+        echo json_encode($_SESSION['usuario'].';'.$_SESSION['id']);
     else echo json_encode("SesionNoIniciada");
