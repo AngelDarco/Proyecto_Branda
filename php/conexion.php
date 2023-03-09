@@ -1,10 +1,4 @@
 <?php
-
-// $db_host = "fdb34.awardspace.net";
-// $db_name = "4013044_darcobbdd";
-// $db_user = "4013044_darcobbdd";
-// $db_pass = "12346789eme";
-
 $db_host = "localhost";
 $db_name = "darcodb";
 $db_user = "root";
