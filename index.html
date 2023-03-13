@@ -4,14 +4,18 @@
     <meta charset="utf-8" />
     <title>TIENDA ONLINE</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="../assets/img/logo2.jpeg">
 
-    <link rel="stylesheet" href="./css/buscador.css">
+    <link rel="icon" type="image/jpeg" href="./assets/img/logo2.jpeg">
+
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/productos.css">
     <link rel="stylesheet" href="./css/registro.css">
-    <link rel="stylesheet" href="./css/sliderSecundario.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js" type="module"></script>
+
 </head>
 
 <body>
@@ -23,31 +27,43 @@
                 <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
 
                 <nav class="main-nav" id="main-nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="../index.html" class="menu__link" target=”_blank”>Inicio</a></li>
-                        <li class="menu__item"><a href="./html/nosotros.html" class="menu__link" target=”_blank”>NOSOTROS</a></li>
-                        <li class="menu__item"><a href="./html/recomendaciones.html" class="menu__link" target=”_blank”>RECOMENDACIONES</a></li>
-                        <li class="menu__item"><a href="./html/catalogo.html" class="menu__link" target=”_blank”>PRODUCTOS</a></li>
+    <ul class="menu">
+<li class="menu__item">
+    <a href="./index.html" class="menu__link" >Inicio</a></li>
+<li class="menu__item">
+    <a href="./html/nosotros.html" class="menu__link" >NOSOTROS</a></li>
+<li class="menu__item">
+    <a href="./html/recomendaciones.html" class="menu__link" >RECOMENDACIONES</a></li>
+<li class="menu__item">
+    <a href="./html/catalogo.html" class="menu__link" >PRODUCTOS</a></li>
                     </ul>
                 </nav>
+                
             </div>
             <div class="main-header__container">
                 <span class="main-header__txt">Atención al cliente</span>
                 <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
             </div>
-            <div class="main-header__container">
+            <div class="main-header__container loginBox">
 
                 <div class="sesion__usuario">
                     <a id="login"><i class="fas fa-user"></i></a>
                     <a id="carro"> <i class="fas fa-shopping-cart"></i></a>
-                    <a id="logout"><i class="fas fa-sign-out-alt" ></i></a>
+                    <a class="hide" id="logout"><i class="fas fa-sign-out-alt" ></i></a>
                 </div>
 
                 <div class="sesion"><h3 id="usuario">invitado</h3></div>
                 
                 <div class="buscar__productos">
-                    <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion">
-                    <i class="fas fa-search" id="buscar"></i></a>
+                    <label for="filter">Most views</label>
+                    <select name="filter" id="filter">
+                        <option value="mejores">mejores productos</option>
+                        <option value="maquillaje">maquillaje</option>
+                        <option value="hidratacion">hidratacion</option>
+                        <option value="tonicos">tonicos</option>
+                        <option value="antioxidantes">antioxidantes</option>
+                        <option value="acne">acne</option>
+                    </select>
                 </div>
 
             </div>
@@ -95,57 +111,16 @@
         </div>
     </div>
 
+
     <main class="main">
-        <div class="container">
 
-            <!-- Codigo Container Buscador -->
-            <div class="container__buscador ocultar" id="redireccion">
-                <i class="fas fa-times btn__cerrar" ></i>  
-            </div>
-
-            <h2 class="main-title">Te presentamos nuestros favoritos</h2>
-            <section class="container-products">
-
-                <div class="product">
-                    <img class="myimg" src="./assets/img/producto1.jpg">
-                    <div class="product__description">
-                        <h3 class="product__title">HIDRADERM AGUA DE AVENA-ROSAS</h3>
-                        <P class="product__txt">Hidratación</P>
-                        <span class="product__price">$500.00</span>
-                    </div>
-                    <i id="1" class="product__icon fas fa-cart-plus"></i>
-                </div>
-                <div class="product">
-                    <img class="myimg" src="./assets/img/producto2.jpg">
-                    <div class="product__description">
-                        <h3 class="product__title">HIDRADERM HYAL CREMA FACIAL</h3>
-                        <P class="product__txt">Hidratación</P>
-                        <span class="product__price">$800.00</span>
-                    </div>
-                    <i id="2" class="product__icon fas fa-cart-plus"></i>
-                </div>
-
-                <div class="product">
-                    <img class="myimg" src="./assets/img/producto3.jpg">
-                    <div class="product__description">
-                        <h3 class="product__title">FLASH NUDE 02 GOLD</h3>
-                        <P class="product__txt">Maquillaje</P>
-                        <span class="product__price">$1,250.00</span>
-                    </div>
-                    <i id="3" class="product__icon fas fa-cart-plus"></i>
-                </div>
-
-                <div class="product">
-                    <img class="myimg" src="./assets/img/producto4.jpg">
-                    <div class="product__description">
-                        <h3 class="product__title">FLASH NUDE POWDER</h3>
-                        <P class="product__txt">Maquillaje</P>
-                        <span class="product__price">$1,250.00</span>
-                    </div>
-                    <i id="4" class="product__icon fas fa-cart-plus"></i>
-                </div>
+            <section id="containerSpa" class="container-products">
+                
+                <iframe src="./html/favorites.html
+                " frameborder="0"></iframe>
 
             </section>
+
             <section class="container__testimonials">
                 <h2 class="section__title">Porque el estilo no tiene raza ni género</h2>
                 <h3 class="testimonial__title">Atrévete a ser tu mejor versión</h3>
@@ -162,6 +137,7 @@
                     <p class="editor__circle">EXPRESA TU ESTILO</p>
                 </div>
             </div>
+            
             <section class="container-tips">
                 <div class="tip">
                     <i class="far fa-hand-paper"></i>
@@ -184,8 +160,8 @@
                     <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
                 </div>
             </section>
-        </div>
 
+            
     </main>
 
     <footer class="main-footer">
@@ -213,21 +189,5 @@
             </div>
 
     </footer>
-
-         <!-- Webpack -->
-    <script src="./js/add.js"></script>
-    <script src="./js/buscador.js"></script>
-<!--     <script src="./js/carro.js"></script> -->
-    <script src="/js/carroAcceso.js"></script>
-    <!-- <script src="./js/delete.js"></script> -->
-    <!-- <script src="./js/formulario.js"></script> -->
-    <script src="./js/slider.js"></script>
-<!--     <script src="/js/sesion.js"></script>
- -->    <script src="/js/login.js"></script>
-    <script src="/js/logout.js"></script>
-    <script src="./js/sweetalert2.all.min.js"></script>
-
-   
-
 </body>
-<./html>
+</html>
