@@ -1,17 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
-    @font-face {
-        font-family: "Inconsolata";
-        src: url(/assets/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
-    }
-    
-@media(min-width:800px) {
-    .formulario {
+.formulario {
+        padding-top: 50px;
         margin: auto;
-        width: 500px;
-        margin-top: 150px;
+        max-width: 450px;
+        height: auto;
         border-radius: 2%;
+        overflow: hidden;
     }
-}
 
 .formulario__label {
     display: block;
@@ -154,21 +148,4 @@ p {
 
 .formulario__grupo-incorrecto .formulario__input {
     border: 3px solid #bb2929;
-}
-
-
-/* ----- -----  Mediaqueries ----- ----- */
-
-@media screen and (max-width: 800px) {
-    .formulario {
-        grid-template-columns: 1fr;
-    }
-    .formulario__grupo-terminos,
-    .formulario__mensaje,
-    .formulario__grupo-btn-enviar {
-        grid-column: 1;
-    }
-    .formulario__btn {
-        width: 100%;
-    }
 }
