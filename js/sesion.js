@@ -1,6 +1,4 @@
-export default function session (login, logout, nickname) {
-  const session = window.localStorage.getItem('BeautyFaceSession')
-
+export default function session (login, logout, nickname, session) {
   if (!session) return
   nickname.innerHTML = session
   login.classList.add('hide')

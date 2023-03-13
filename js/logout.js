@@ -1,5 +1,3 @@
-import Swal from 'sweetalert2'
-
 export default function logout (loginIcon, logoutIcon, nickname) {
   logoutIcon.addEventListener('click', () => {
     fetch('./php/logout.php')
@@ -10,7 +8,9 @@ export default function logout (loginIcon, logoutIcon, nickname) {
           logoutIcon.classList.add('hide')
           nickname.innerHTML = 'Invitado'
           window.localStorage.removeItem('BeautyFaceSession')
-          Swal.fire({
+
+          // eslint-disable-next-line
+            Swal.fire({
             position: 'center',
             icon: 'warning',
             title: 'Session Cerrada',
