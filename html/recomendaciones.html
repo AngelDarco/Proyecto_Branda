@@ -4,22 +4,21 @@
     <meta charset="utf-8" />
     <title>RECOMENDACIONES</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
+    <link rel="icon" type="image/jpeg" href="../assets/img/logo2.jpeg">
+
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="img/logo2.jpeg">
-
-
-    <link rel="stylesheet" href="/css/sliderSecundario.css">
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="/css/productos.css">
-    <link rel="stylesheet" href="/css/buscador.css">
-    <script src="/js/slider.js"></script>
-    <script src="/js/carro.js"></script>
-    <script src="/js/add.js"></script>
-  <script src="/js/sweetalert2.all.min.js"></script>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="module" defer src="../js/cardsButtons.js"></script>
+    <script type="module" src="../js/slider.js"></script>
+    <script src="../js/userName.js"></script>
 
 </head>
-
 <body>
 
     <header class="main-header">
@@ -29,11 +28,15 @@
                 <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
 
                 <nav class="main-nav" id="main-nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="../index.html" class="menu__link" target=”_blank”>Inicio</a></li>
-                        <li class="menu__item"><a href="/html/nosotros.html" class="menu__link" target=”_blank”>NOSOTROS</a></li>
-                        <li class="menu__item"><a href="/html/recomendaciones.html" class="menu__link" target=”_blank”>RECOMENDACIONES</a></li>
-                        <li class="menu__item"><a href="/html/catalogo.html" class="menu__link" target=”_blank”>PRODUCTOS</a></li>
+    <ul class="menu">
+<li class="menu__item">
+    <a href="../index.html" class="menu__link" >Inicio</a></li>
+<li class="menu__item">
+    <a href="./nosotros.html" class="menu__link" >NOSOTROS</a></li>
+<li class="menu__item">
+    <a href="./recomendaciones.html" class="menu__link" >RECOMENDACIONES</a></li>
+<li class="menu__item">
+    <a href="./catalogo.html" class="menu__link" >PRODUCTOS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,18 +46,7 @@
             </div>
             <div class="main-header__container">
 
-                <div class="sesion__usuario">
-                    <a  href="/html/login.html" target="_blank"><i class="fas fa-user"></i></a>
-                    <a  href="/html/carro.html" target="_blank"> <i class="fas fa-shopping-cart"></i></a>
-                    <a  href="/php/logout.php" target="_blank"><i class="fas fa-sign-out-alt"></i></a>
-                </div>
-                
                 <div class="sesion"><h3 id="usuario">invitado</h3></div>
-
-                <div class="buscar__productos">
-                    <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion">
-                    <i class="fas fa-search" id="buscar"></i></a>
-                </div>
 
             </div>
         </div>
@@ -64,35 +56,35 @@
     <div class="container-slider">
         <div class="slider" id="slider">
             <div class="slider__section">
-                <img src="/assets/img/skincare.jpg" alt="" class="slider__img">
+                <img src="../assets/img/skincare.jpg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
+                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
                 </div>
             </div>
             <div class="slider__section">
-                <img src="/assets/img/skincare2.jpg" alt="" class="slider__img">
+                <img src="../assets/img/skincare2.jpg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡APRENDE CON NOSOTRAS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
+                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
                 </div>
             </div>
             <div class="slider__section">
-                <img src="/assets/img/skincare3.jpeg" alt="" class="slider__img">
+                <img src="../assets/img/skincare3.jpeg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
+                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
                 </div>
             </div>
             <div class="slider__section">
-                <img src="/assets/img/skincare4.jpeg" alt="" class="slider__img">
+                <img src="../assets/img/skincare4.jpeg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
+                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
                 </div>
             </div>
         </div>
@@ -101,11 +93,6 @@
         <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
         </div>
     
-    </div>
-
-      <!-- Codigo catalogo Buscador -->
-      <div class="container__buscador ocultar" id="redireccion">
-        <i class="fas fa-times btn__cerrar" ></i>  
     </div>
 
     <section class="container__testimonials">
@@ -193,139 +180,110 @@
         <p class="testimonial__txt"></p>
         </p>
 
-        <div class="container-sliderDos">
-            <div class="sliderDos" id="sliderDos">
-                <div class="slider__sectionDos">
-                    <img src="/assets/img/skincare2.jpg" alt="" class="slider__imgDos">
-                    <div class="slider__contentDos">
-                        <h2 class="slider__titleDos">¡TE PRESENTAMOS NUESTRAS RECOMENDACIONES!</h2>
-                        <p class="slider__txtDos">La mejor inversión, eres tú</p>
-                        <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
-                    </div>
-                </div>
-                <div class="slider__sectionDos">
-                    <img src="/assets/img/skincare5.jp3g" alt="" class="slider__imgDos">
-                    <div class="slider__contentDos">
-                        <h2 class="slider__titleDos">¡TE PRESENTAMOS NUESTRAS RECOMENDACIONES!</h2>
-                        <p class="slider__txtDos">La mejor inversión, eres tú</p>
-                        <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
-                    </div>
-                </div>
-                <div class="slider__sectionDos">
-                    <img src="/assets/img/skincare6.jpeg" alt="" class="slider__imgDos">
-                    <div class="slider__contentDos">
-                        <h2 class="slider__titleDos">¡TE PRESENTAMOS NUESTRAS RECOMENDACIONES!</h2>
-                        <p class="slider__txtDos">La mejor inversión, eres tú</p>
-                        <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
-                    </div>
-                </div>
-                <div class="slider__sectionDos">
-                    <img src="/assets/img/skincare7.jp3g" alt="" class="slider__imgDos">
-                    <div class="slider__contentDos">
-                        <h2 class="slider__titleDos">¡TE PRESENTAMOS NUESTRAS RECOMENDACIONES!</h2>
-                        <p class="slider__txtDos">La mejor inversión, eres tú</p>
-                        <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
         <h2 class="main-title" style="text-align: left">Estos productos son aptos para todo tipo de piel:</h2>
     </section>
-    <section class="container-products">
-        <div class="product">
-            <img src="/assets/img/zero2.jpg">
+
+
+   <div class="cardsContainer">
+    <div class="main__title">
+        <h2>Te presentamos nuestros favoritos</h2>
+    </div>
+    <div class="iframe__container">
+        <div class="product" id="65">
+            <img src="../assets/img/zero2.jpg">
             <div class="product__description">
                 <h3 class="product__title">Clean It Zero</h3>
                 <P class="product__txt">Limpiador a base de aceite</P>
                 <span class="product__price">$600.00</span>
             </div>
-            <i id="65" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/cerave.jpg">
+        <div class="product" id="66">
+            <img src="../assets/img/cerave.jpg">
             <div class="product__description">
                 <h3 class="product__title">Cerave Cleanser</h3>
                 <P class="product__txt">Limpiador a base de agua</P>
                 <span class="product__price">$300.00</span>
             </div>
-            <i id="66" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/thayers.jpg">
+        <div class="product" id="67">
+            <img src="../assets/img/thayers.jpg">
             <div class="product__description">
                 <h3 class="product__title">Facial Toner Thayers</h3>
                 <P class="product__txt">Tónico facial</P>
                 <span class="product__price">$320.00</span>
             </div>
-            <i id="67" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/gm.jpg">
+        <div class="product" id="68">
+            <img src="../assets/img/gm.jpg">
             <div class="product__description">
                 <h3 class="product__title">Overnight Exfoliating Treatment Good Molecules</h3>
                 <P class="product__txt">Exfoliante químico</P>
                 <span class="product__price">$220.00</span>
             </div>
-            <i id="68" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/suero.png">
+        <div class="product" id="69">
+            <img src="../assets/img/suero.png">
             <div class="product__description">
                 <h3 class="product__title">Hyaluronic Acid The Ordinary</h3>
                 <P class="product__txt">Suero</P>
                 <span class="product__price">$400.00</span>
             </div>
-            <i id="69" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/mask.jpg">
+        <div class="product" id="70">
+            <img src="../assets/img/mask.jpg">
             <div class="product__description">
                 <h3 class="product__title">Mascarillas Tony Moly</h3>
                 <P class="product__txt">Sheet Mask</P>
                 <span class="product__price">$40.00</span>
             </div>
-            <i id="70" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/ojos.jpg">
+        <div class="product" id="71">
+            <img src="../assets/img/ojos.jpg">
             <div class="product__description">
                 <h3 class="product__title">Contorno Ojos Cerave</h3>
                 <P class="product__txt">Contorno de ojos</P>
                 <span class="product__price">$289.00</span>
             </div>
-            <i id="71" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/neutrogena.jpg">
+        <div class="product" id="72">
+            <img src="../assets/img/neutrogena.jpg">
             <div class="product__description">
                 <h3 class="product__title">Hydro Boost Neutrogena</h3>
                 <P class="product__txt">Hidratante</P>
                 <span class="product__price">$290.00</span>
             </div>
-            <i id="72" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/isdin.jpg">
+        <div class="product" id="73">
+            <img src="../assets/img/isdin.jpg">
             <div class="product__description">
                 <h3 class="product__title">Fusion Water Isdin</h3>
                 <P class="product__txt">Protector solar</P>
                 <span class="product__price">$437.00</span>
             </div>
-            <i id="73" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-        <div class="product">
-            <img src="/assets/img/mask2.jpg">
+        <div class="product" id="74">
+            <img src="../assets/img/mask2.jpg">
             <div class="product__description">
                 <h3 class="product__title">Ultra Facial Overnight Hydrating Masque Kiehl's</h3>
                 <P class="product__txt">Mascarilla nocturna</P>
                 <span class="product__price">$770.00</span>
             </div>
-            <i id="74" class="product__icon fas fa-cart-plus"></i>
+            <i class="product__icon fas fa-cart-plus"></i>
         </div>
-    </section>
-    <h2 style="text-align:left"> ¡Esperamos que nuestras recomendaciones te hayan sido de ayuda, no dudes en contactarnos para resolver cualquiera de tus dudas!</h2>
+ </div>
+   </div>
+
+
+    <h2 style="text-align:left; padding: 10px 30px;"> ¡Esperamos que nuestras recomendaciones te hayan sido de ayuda, no dudes en contactarnos para resolver cualquiera de tus dudas!</h2>
     <footer class="main-footer">
         <div class="footer__section">
             <h2 class="footer__title">Sobre Nosotros</h2>
@@ -339,10 +297,10 @@
             </div>
             <div class="footer__section">
                 <h2 class="footer__title">Quick Links</h2>
-                <a href="/html/login.html" class="footer__link" target=”_blank”>REGISTRATE</a>
-                <a href="/html/nosotros.html" class="footer__link" target=”_blank”>NOSOTROS</a>
-                <a href="/html/recomendaciones.html" class="footer__link" target=”_blank”>RECOMENDACIONES</a>
-                <a href="/html/catalogo.html" class="footer__link">PRODUCTOS</a>
+                <a href="./login.html" class="footer__link" >REGISTRATE</a>
+                <a href="./nosotros.html" class="footer__link" >NOSOTROS</a>
+                <a href="./recomendaciones.html" class="footer__link" >RECOMENDACIONES</a>
+                <a href="./catalogo.html" class="footer__link">PRODUCTOS</a>
             </div>
             <div class="footer__section">
                 <h2 class="footer__title">Registrate para recibir ofertas</h2>
@@ -352,5 +310,3 @@
         </div>
     </footer>
 </body>
-        <script src="/js/buscador.js"></script>
-</html>

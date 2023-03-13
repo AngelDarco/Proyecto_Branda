@@ -4,17 +4,24 @@
     <meta charset="utf-8" />
     <title>NOSOTROS</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
+
+    <link rel="icon" type="image/jpeg" href="../assets/img/logo2.jpeg">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/jpeg" href="/assets/img/logo2.jpeg">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Codigo Nuevo -->
-    <script src="/js/slider.js"></script>
-    <link rel="stylesheet" href="/css/estilos.css">
-    <link rel="stylesheet" href="/css/buscador.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script type="module" defer src="../js/cardsButtons.js"></script>
+    <script type="module" src="../js/slider.js"></script>
+<script src="../js/userName.js"></script>
+
+
 </head>
 
 <body>
-
     <header class="main-header">
         <div class="container container--flex">
             <div class="main-header__container">
@@ -22,11 +29,15 @@
                 <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
 
                 <nav class="main-nav" id="main-nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="../index.html" class="menu__link" target=”_blank”>Inicio</a></li>
-                        <li class="menu__item"><a href="/html/nosotros.html" class="menu__link" target=”_blank”>NOSOTROS</a></li>
-                        <li class="menu__item"><a href="/html/recomendaciones.html" class="menu__link" target=”_blank”>RECOMENDACIONES</a></li>
-                        <li class="menu__item"><a href="/html/catalogo.html" class="menu__link" target=”_blank”>PRODUCTOS</a></li>
+    <ul class="menu">
+<li class="menu__item">
+    <a href="../index.html" class="menu__link" >Inicio</a></li>
+<li class="menu__item">
+    <a href="./nosotros.html" class="menu__link" >NOSOTROS</a></li>
+<li class="menu__item">
+    <a href="./recomendaciones.html" class="menu__link" >RECOMENDACIONES</a></li>
+<li class="menu__item">
+    <a href="./catalogo.html" class="menu__link" >PRODUCTOS</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,28 +47,16 @@
             </div>
             <div class="main-header__container">
 
-                <div class="sesion__usuario">
-                    <a  href="/html/login.html" target="_blank"><i class="fas fa-user"></i></a>
-                    <a  href="/html/carro.html" target="_blank"> <i class="fas fa-shopping-cart"></i></a>
-                    <a  href="/php/logout.php" target="_blank"><i class="fas fa-sign-out-alt"></i></a>
-                </div>
-
                 <div class="sesion"><h3 id="usuario">invitado</h3></div>
-                
-                <div class="buscar__productos">
-                    <input type="search" class="main-header__input" placeholder="Buscar productos"><a href="#redireccion">
-                    <i class="fas fa-search" id="buscar"></i></a>
-                </div>
-           
+
             </div>
         </div>
     </header>
 
-
     <div class="container-slider">
         <div class="slider" id="slider">
             <div class="slider__section">
-                <img src="/assets/img/mkp.jpg" alt="" class="slider__img">
+                <img src="../assets/img/mkp.jpg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
@@ -65,7 +64,7 @@
                 </div>
             </div>
             <div class="slider__section">
-                <img src="/assets/img/skincare.jpg" alt="" class="slider__img">
+                <img src="../assets/img/skincare.jpg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
@@ -73,7 +72,7 @@
                 </div>
             </div>
             <div class="slider__section">
-                <img src="/assets/img/skincare3.jpeg" alt="" class="slider__img">
+                <img src="../assets/img/skincare3.jpeg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
@@ -81,11 +80,11 @@
                 </div>
             </div>
             <div class="slider__section">
-                <img src="/assets/img/skincare4.jpeg" alt="" class="slider__img">
+                <img src="../assets/img/skincare4.jpeg" alt="" class="slider__img">
                 <div class="slider__content">
                     <h2 class="slider__title">¡CONOCENOS!</h2>
                     <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="/html/catalogo.html" class="btn-shop">Compra ahora</a>
+                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
                 </div>
             </div>
         </div>
@@ -94,13 +93,7 @@
         </div>
         <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
         </div>
-
-        </div>
-
-          <!-- Codigo catalogo Buscador -->
-          <div class="container__buscador ocultar" id="redireccion">
-            <i class="fas fa-times btn__cerrar" ></i>  
-        </div>
+</div>
 
     <section class="container__testimonials">
         <h2 class="section__title"> Porque el estilo no tiene raza ni género</h2>
@@ -132,10 +125,10 @@
             </div>
             <div class="footer__section">
                 <h2 class="footer__title">Quick Links</h2>
-                <a href="/html/login.html" class="footer__link" target=”_blank”>REGISTRATE</a>
-                <a href="/html/nosotros.html" class="footer__link" target=”_blank”>NOSOTROS</a>
-                <a href="/html/recomendaciones.html" class="footer__link" target=”_blank”>RECOMENDACIONES</a>
-                <a href="/html/catalogo.html" class="footer__link">PRODUCTOS</a>
+                <a href="./login.html" class="footer__link" >REGISTRATE</a>
+                <a href="./nosotros.html" class="footer__link" >NOSOTROS</a>
+                <a href="./recomendaciones.html" class="footer__link" >RECOMENDACIONES</a>
+                <a href="./catalogo.html" class="footer__link">PRODUCTOS</a>
             </div>
             <div class="footer__section">
                 <h2 class="footer__title">Registrate para recibir ofertas</h2>
@@ -145,5 +138,3 @@
         </div>
     </footer>
 </body>
-        <script src="/js/buscador.js"></script>
-</html>

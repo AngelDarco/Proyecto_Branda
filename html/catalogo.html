@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="iframe__view" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpeg" href="/assets/img/logo2.jpeg">
+    <link rel="icon" type="image/jpeg" href="../assets/img/logo2.jpeg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/userName.js"></script>
+
     <title>CATALOGO</title>
 </head>
 <body>
-    <link rel="stylesheet" href="/css/productos.css">
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
   </head>
   <body>
 
@@ -21,12 +23,12 @@
             <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
             <nav class="main-nav" id="main-nav">
               <ul class="menu">
-                <li class="menu__item"><a href="/index.html" class="menu__link" >Inicio</a></li>
-                <li class="menu__item"><a href="/html/maquillaje.html" class="menu__link" target="iframe__view">Maquillaje</a></li>
-                <li class="menu__item"><a href="/html/hidratacion.html" class="menu__link" target="iframe__view">Hidratación</a></li>
-                <li class="menu__item"><a href="/html/tonicos.html" class="menu__link" target="iframe__view">Tonicos</a></li>
-                <li class="menu__item"><a href="/html/antioxidantes.html" class="menu__link" target="iframe__view">Antioxidantes</a></li>
-                <li class="menu__item"><a href="/html/acne.html" class="menu__link" target="iframe__view">Acne</a></li>
+                <li class="menu__item"><a href="../index.html" class="menu__link" >Inicio</a></li>
+                <li class="menu__item"><a href="./maquillaje.html" class="menu__link" target="iframe__view">Maquillaje</a></li>
+                <li class="menu__item"><a href="./hidratacion.html" class="menu__link" target="iframe__view">Hidratación</a></li>
+                <li class="menu__item"><a href="./tonicos.html" class="menu__link" target="iframe__view">Tonicos</a></li>
+                <li class="menu__item"><a href="./antioxidantes.html" class="menu__link" target="iframe__view">Antioxidantes</a></li>
+                <li class="menu__item"><a href="./acne.html" class="menu__link" target="iframe__view">Acne</a></li>
               </ul>
             </nav>
           </div>
@@ -35,25 +37,15 @@
             <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
           </div>
           <div class="main-header__container">
-  
-            <div class="sesion__usuario">
-                <a  href="/html/login.html"><i class="fas fa-user"></i></a>
-                <a  href="/php/carro.php" > <i class="fas fa-shopping-cart"></i></a>
-                <a  href="/php/logout.php"><i class="fas fa-sign-out-alt"></i></a>
-            </div>
 
             <div class="sesion"><h3 id="usuario">invitado</h3></div>
 
-       
         </div>
         </div>
   
   </header>
 
     <div class="contenedor__catalogo">
-      <iframe name="iframe__view" src="/html/acne.html" frameborder="0" ></iframe>
+      <iframe name="iframe__view" src="./acne.html" frameborder="0" ></iframe>
     </div>
-
   </body>
-      <script src="/js/sesion.js"></script>
-</html>
