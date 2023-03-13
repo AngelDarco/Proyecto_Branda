@@ -1,8 +1,8 @@
 <?php
     require_once 'conexion.php';
     
-    $email = $_POST['email'];
-    $pass = $_POST['pass'];
+    $email = $_POST['correo'];
+    $pass = $_POST['password'];
 
     if (!empty($email)&&!empty($pass)){
         try {
@@ -24,14 +24,14 @@
             else {
                 echo json_encode("NoRegistrado");
                 $result2->closeCursor();
-                // $conexion->null;
-                // $sql2->null;
+                $conexion = null;
+                $sql2 = null;
             };
             
         } catch (Exception $e) {
             echo json_encode("Failed".$e->getMessage());
-                $conexion->null;
-                $sql2->null;
+                $conexion = null;
+                $sql2 = null;
         }  
     }else{
         echo json_encode('Vacio');
