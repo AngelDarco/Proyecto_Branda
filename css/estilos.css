@@ -397,11 +397,11 @@ body {
   background: #151515;
   color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 5rem;
-
   padding: 3rem 20px;
-  border: 1px solid #555;
 }
 
 .footer__section {
@@ -409,11 +409,13 @@ body {
   gap: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px dotted #555;
+  width: 100%;
 }
 
 .footer__title {
   display: block;
   text-wrap: nowrap;
+  max-width: 900px;
 }
 
 .footer__txt {
@@ -422,6 +424,7 @@ body {
   text-align: start;
   align-items: center;
   justify-content: center;
+  max-width: 900px;
 }
 
 .links {
