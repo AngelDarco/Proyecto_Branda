@@ -1,193 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>TIENDA ONLINE</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0"
+    />
 
-    <link rel="icon" type="image/jpeg" href="./assets/img/logo2.jpeg">
+    <link rel="icon" type="image/jpeg" href="./assets/img/logo2.jpeg" />
 
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/productos.css">
-    <link rel="stylesheet" href="./css/registro.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/productos.css" />
+    <link rel="stylesheet" href="./css/registro.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./app.js" type="module"></script>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="main-header">
-        <div class="container container--flex">
-            <div class="main-header__container">
-                <h1 class="main-header__title"> BEAUTY FACE </h1>
-                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+      <div class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__title">BEAUTY FACE</h1>
+          <span class="icon-menu" id="btn-menu"
+            ><i class="fas fa-bars"></i
+          ></span>
 
-                <nav class="main-nav" id="main-nav">
-    <ul class="menu">
-<li class="menu__item">
-    <a href="./index.html" class="menu__link" >Inicio</a></li>
-<li class="menu__item">
-    <a href="./html/nosotros.html" class="menu__link" >NOSOTROS</a></li>
-<li class="menu__item">
-    <a href="./html/recomendaciones.html" class="menu__link" >RECOMENDACIONES</a></li>
-<li class="menu__item">
-    <a href="./html/catalogo.html" class="menu__link" >PRODUCTOS</a></li>
-                    </ul>
-                </nav>
-                
-            </div>
-            <div class="main-header__container">
-                <span class="main-header__txt">Atención al cliente</span>
-                <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
-            </div>
-            <div class="main-header__container loginBox">
-
-                <div class="sesion__usuario">
-                    <a id="login"><i class="fas fa-user"></i></a>
-                    <a id="carro"> <i class="fas fa-shopping-cart"></i></a>
-                    <a class="hide" id="logout"><i class="fas fa-sign-out-alt" ></i></a>
-                </div>
-
-                <div class="sesion"><h3 id="usuario">invitado</h3></div>
-                
-                <div class="buscar__productos">
-                    <label for="filter">Most views</label>
-                    <select name="filter" id="filter">
-                        <option value="mejores">mejores productos</option>
-                        <option value="maquillaje">maquillaje</option>
-                        <option value="hidratacion">hidratacion</option>
-                        <option value="tonicos">tonicos</option>
-                        <option value="antioxidantes">antioxidantes</option>
-                        <option value="acne">acne</option>
-                    </select>
-                </div>
-
-            </div>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link">Inicio</a>
+              </li>
+              <li class="menu__item">
+                <a href="./html/nosotros.html" class="menu__link">NOSOTROS</a>
+              </li>
+              <li class="menu__item">
+                <a href="./html/recomendaciones.html" class="menu__link"
+                  >RECOMENDACIONES</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="./html/catalogo.html" class="menu__link">PRODUCTOS</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <div class="main-header__container">
+          <span class="main-header__txt">Atención al cliente</span>
+          <p class="main-header__txt">
+            <i class="fas fa-phone"></i> Llama 8341164846
+          </p>
+        </div>
+        <div class="main-header__container loginBox">
+          <div class="sesion__usuario">
+            <span
+              >!Hi There:
+              <p id="usuario">Guest</p></span
+            >
+            <div>
+              <a id="login"><i class="fas fa-user"></i></a>
+              <a id="carro"> <i class="fas fa-shopping-cart"></i></a>
+              <a class="hide" id="logout"
+                ><i class="fas fa-sign-out-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="buscar__productos">
+            <select name="filter" id="filter">
+              <option value="mejores">mejores productos</option>
+              <option value="maquillaje">maquillaje</option>
+              <option value="hidratacion">hidratacion</option>
+              <option value="tonicos">tonicos</option>
+              <option value="antioxidantes">antioxidantes</option>
+              <option value="acne">acne</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="container-slider">
-        <div class="slider" id="slider">
-            <div class="slider__section">
-                <img src="./assets/img/imagen1.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">El maquillaje magnifica la belleza que ya existe</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="./assets/img/imagen2.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">El maquillaje magnifica la belleza que ya existe</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="./assets/img/imagen3.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">El maquillaje magnifica la belleza que ya existe</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="./assets/img/imagen4.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">El maquillaje magnifica la belleza que ya existe</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="./assets/img/imagen1.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">
+              El maquillaje magnifica la belleza que ya existe
+            </h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
         </div>
-        <div class="slider__btn slider__btn--right" id="btn-right"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        <div class="slider__section">
+          <img src="./assets/img/imagen2.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">
+              El maquillaje magnifica la belleza que ya existe
+            </h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
         </div>
-        <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        <div class="slider__section">
+          <img src="./assets/img/imagen3.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">
+              El maquillaje magnifica la belleza que ya existe
+            </h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
         </div>
+        <div class="slider__section">
+          <img src="./assets/img/imagen4.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">
+              El maquillaje magnifica la belleza que ya existe
+            </h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./html/catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+      </div>
+      <div class="slider__btn slider__btn--left" id="btn-left">
+        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+      </div>
     </div>
 
-
     <main class="main">
+      <section id="containerSpa" class="container-products">
+        <h2>Te presentamos nuestros favoritos</h2>
+        <iframe
+          src="./html/favorites.html
+                "
+          frameborder="0"
+        ></iframe>
+      </section>
 
-            <section id="containerSpa" class="container-products">
-                
-                <iframe src="./html/favorites.html
-                " frameborder="0"></iframe>
+      <section class="container__testimonials">
+        <h2 class="section__title">Porque el estilo no tiene raza ni género</h2>
+        <h3 class="testimonial__title">Atrévete a ser tu mejor versión</h3>
+        <p class="testimonial__txt"></p>
+      </section>
 
-            </section>
+      <div class="container-editor">
+        <div class="editor__item">
+          <img src="./assets/img/unisex.jpeg" alt="" class="editor__img" />
+          <p class="editor__circle">EXPRESA TU ESTILO</p>
+        </div>
+        <div class="editor__item">
+          <img src="./assets/img/inclusion.jpg" alt="" class="editor__img" />
+          <p class="editor__circle">EXPRESA TU ESTILO</p>
+        </div>
+      </div>
 
-            <section class="container__testimonials">
-                <h2 class="section__title">Porque el estilo no tiene raza ni género</h2>
-                <h3 class="testimonial__title">Atrévete a ser tu mejor versión</h3>
-                <p class="testimonial__txt"></p>
-            </section>
+      <section class="container-tips">
+        <div class="tip">
+          <i class="far fa-hand-paper"></i>
+          <h2 class="tip__title">Empieza a cuidar tu piel</h2>
+          <p class="tip__txt">
+            La piel es nuestro organo mas grande, por eso es importante darle la
+            atención que merece.
+          </p>
+          <p>¡Aprende a cuidarla!</p>
+          <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
+        </div>
+        <div class="tip">
+          <i class="fas fa-rocket"></i>
+          <h2 class="tip__title">Envios solo locales</h2>
+          <p class="tip__txt">
+            Por el momento solo hacemos entregas en Ciudad Victoria, pero
+            esperamos tener envios nacionales muy pronto
+          </p>
+          <p>
+            <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
+          </p>
+        </div>
 
-            <div class="container-editor">
-                <div class="editor__item">
-                    <img src="./assets/img/unisex.jpeg" alt="" class="editor__img">
-                    <p class="editor__circle">EXPRESA TU ESTILO</p>
-                </div>
-                <div class="editor__item">
-                    <img src="./assets/img/inclusion.jpg" alt="" class="editor__img">
-                    <p class="editor__circle">EXPRESA TU ESTILO</p>
-                </div>
-            </div>
-            
-            <section class="container-tips">
-                <div class="tip">
-                    <i class="far fa-hand-paper"></i>
-                    <h2 class="tip__title">Empieza a cuidar tu piel </h2>
-                    <p class="tip__txt">La piel es nuestro organo mas grande, por eso es importante darle la atención que merece.</p>
-                    <p>¡Aprende a cuidarla!</p>
-                    <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
-                </div>
-                <div class="tip">
-                    <i class="fas fa-rocket"></i>
-                    <h2 class="tip__title">Envios solo locales</h2>
-                    <p class="tip__txt">Por el momento solo hacemos entregas en Ciudad Victoria, pero esperamos tener envios nacionales muy pronto</p>
-                    <p>
-                        <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
-                </div>
-                <div class="tip">
-                    <i class="fas fa-cog"></i>
-                    <h2 class="tip__title">Pagos asegurados</h2>
-                    <p class="tip__txt">No tendras que preocuparte por tu dinero porque el pago es 100% personal, por lo cual, tendras una compra segura.</p>
-                    <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
-                </div>
-            </section>
-
-            
+        <div class="tip">
+          <i class="fas fa-cog"></i>
+          <h2 class="tip__title">Pagos asegurados</h2>
+          <p class="tip__txt">
+            No tendras que preocuparte por tu dinero porque el pago es 100%
+            personal, por lo cual, tendras una compra segura.
+          </p>
+          <a href="./html/catalogo.html" class="btn-shop">SHOP NOW</a>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
-        <div class="footer__section">
-            <h2 class="footer__title">Sobre Nosotros</h2>
-            <p class="footer__txt">Somos una tienda que ofrece gran variedad de productos de belleza y cuidado de piel, asi como tambien podrás encontrar tips y reseñas sobre nuestra mercancía.</p>
-            <div class="footer__section">
-                <h2 class="footer__title">Ubicación :</h2>
-                <p class="footer__txt">Ciudad Victoria, Tamaulipas. Mexico </p>
-                <h2 class="footer__title">Contacto</h2>
-                <p class="footer__txt">Teléfono : 8341164846</p>
-                <p class="footer__txt">Email : beautyface@gmail.com</p>
-            </div>
-            <div class="footer__section">
-                <h2 class="footer__title">Quick Links</h2>
-                <a href="./html/login.html" class="footer__link" target=”_blank”>REGISTRATE</a>
-                <a href="./html/nosotros.html" class="footer__link" target=”_blank”>NOSOTROS</a>
-                <a href="./html/recomendaciones.html" class="footer__link" target=”_blank”>RECOMENDACIONES</a>
-                <a href="./html/catalogo.html" class="footer__link">PRODUCTOS</a>
-            </div>
-            <div class="footer__section">
-                <h2 class="footer__title">Registrate para recibir ofertas</h2>
-                <p class="footer__txt">Únete a nuestro CLUB DE LA BELLEZA y entérate de Promociones, Eventos, Nuevos Productos y mucho más...</p>
-
-            </div>
-
+      <div class="footer__section">
+        <h2 class="footer__title">Sobre Nosotros:</h2>
+        <p class="footer__txt">
+          Somos una tienda que ofrece gran variedad de productos de belleza y
+          cuidado de piel, asi como tambien podrás encontrar tips y reseñas
+          sobre nuestra mercancía.
+        </p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Ubicación:</h2>
+        <p class="footer__txt">Ciudad Victoria, Tamaulipas. Mexico</p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Contacto:</h2>
+        <p class="footer__txt">Teléfono : 8341164846</p>
+        <p class="footer__txt">Email : beautyface@gmail.com</p>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Quick Links:</h2>
+        <div class="links">
+          <a href="./html/login.html" class="footer__link" target="”_blank”"
+            >REGISTRATE</a
+          >
+          <a href="./html/nosotros.html" class="footer__link" target="”_blank”"
+            >NOSOTROS</a
+          >
+          <a
+            href="./html/recomendaciones.html"
+            class="footer__link"
+            target="”_blank”"
+            >RECOMENDACIONES</a
+          >
+          <a href="./html/catalogo.html" class="footer__link">PRODUCTOS</a>
+        </div>
+      </div>
+      <div class="footer__section">
+        <h2 class="footer__title">Registrate:</h2>
+        <p class="footer__txt">
+          Únete a nuestro CLUB DE LA BELLEZA y entérate de Promociones, Eventos,
+          Nuevos Productos y mucho más...
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
