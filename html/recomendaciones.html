@@ -1,312 +1,397 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>RECOMENDACIONES</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0">
-    <link rel="icon" type="image/jpeg" href="../assets/img/logo2.jpeg">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale= 1.0, minimum-scale= 1.0"
+    />
+    <link rel="icon" type="image/jpeg" href="../assets/img/logo2.jpeg" />
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
-    <link rel="stylesheet" href="../css/card.css">
-    <link rel="stylesheet" href="../css/slider.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+
+    <link rel="stylesheet" href="../css/card.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <script type="module" defer src="../js/cardsButtons.js"></script>
     <script type="module" src="../js/slider.js"></script>
     <script src="../js/userName.js"></script>
-
-</head>
-<body>
-
+  </head>
+  <body class="testimonials">
     <header class="main-header">
-        <div class="container container--flex">
-            <div class="main-header__container">
-                <h1 class="main-header__title"> BEAUTY FACE </h1>
-                <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+      <div class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__title">BEAUTY FACE</h1>
+          <span class="icon-menu" id="btn-menu"
+            ><i class="fas fa-bars"></i
+          ></span>
 
-                <nav class="main-nav" id="main-nav">
-    <ul class="menu">
-<li class="menu__item">
-    <a href="../index.html" class="menu__link" >Inicio</a></li>
-<li class="menu__item">
-    <a href="./nosotros.html" class="menu__link" >NOSOTROS</a></li>
-<li class="menu__item">
-    <a href="./recomendaciones.html" class="menu__link" >RECOMENDACIONES</a></li>
-<li class="menu__item">
-    <a href="./catalogo.html" class="menu__link" >PRODUCTOS</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="main-header__container">
-                <span class="main-header__txt">Atención al cliente</span>
-                <p class="main-header__txt"><i class="fas fa-phone"></i> Llama 8341164846</p>
-            </div>
-            <div class="main-header__container">
-
-                <div class="sesion"><h3 id="usuario">invitado</h3></div>
-
-            </div>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="../index.html" class="menu__link">Inicio</a>
+              </li>
+              <li class="menu__item">
+                <a href="./nosotros.html" class="menu__link">NOSOTROS</a>
+              </li>
+              <li class="menu__item">
+                <a href="./recomendaciones.html" class="menu__link"
+                  >RECOMENDACIONES</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="./catalogo.html" class="menu__link">PRODUCTOS</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <div class="main-header__container">
+          <span class="main-header__txt">Atención al cliente</span>
+          <p class="main-header__txt">
+            <i class="fas fa-phone"></i> Llama 8341164846
+          </p>
+        </div>
+
+        <div class="main-header__container loginBox">
+          <div class="sesion__usuario">
+            <span
+              >!Hi There:
+              <p id="usuario">Guest</p></span
+            >
+            <div>
+              <a id="login"><i class="fas fa-user"></i></a>
+              <a id="carro"> <i class="fas fa-shopping-cart"></i></a>
+              <a class="hide" id="logout"
+                ><i class="fas fa-sign-out-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
-
     <div class="container-slider">
-        <div class="slider" id="slider">
-            <div class="slider__section">
-                <img src="../assets/img/skincare.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">¡CONOCENOS!</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="../assets/img/skincare2.jpg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">¡APRENDE CON NOSOTRAS!</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="../assets/img/skincare3.jpeg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">¡CONOCENOS!</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
-            <div class="slider__section">
-                <img src="../assets/img/skincare4.jpeg" alt="" class="slider__img">
-                <div class="slider__content">
-                    <h2 class="slider__title">¡CONOCENOS!</h2>
-                    <p class="slider__txt">La mejor inversión, eres tú</p>
-                    <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
-                </div>
-            </div>
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="../assets/img/skincare.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">¡CONOCENOS!</h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
         </div>
-        <div class="slider__btn slider__btn--right" id="btn-right"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        <div class="slider__section">
+          <img src="../assets/img/skincare2.jpg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">¡APRENDE CON NOSOTRAS!</h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
         </div>
-        <div class="slider__btn slider__btn--left" id="btn-left"><i class="fa fa-angle-double-left" aria-hidden="true"></i>
+        <div class="slider__section">
+          <img src="../assets/img/skincare3.jpeg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">¡CONOCENOS!</h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
         </div>
-    
+        <div class="slider__section">
+          <img src="../assets/img/skincare4.jpeg" alt="" class="slider__img" />
+          <div class="slider__content">
+            <h2 class="slider__title">¡CONOCENOS!</h2>
+            <p class="slider__txt">La mejor inversión, eres tú</p>
+            <a href="./catalogo.html" class="btn-shop">Compra ahora</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__btn slider__btn--right" id="btn-right">
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+      </div>
+      <div class="slider__btn slider__btn--left" id="btn-left">
+        <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+      </div>
     </div>
 
     <section class="container__testimonials">
-        <h2 class="section__title"> Porque el estilo no tiene raza ni género</h2>
-        <h3 class="testimonial__title"> Entrar en el mundo Skincare puede parecer de buenas a primeras abrumador. Limpiador, exfoliante, agua micelar, agua termal, tónico, mascarilla... Nosotras sabemos lo confuso y complicado que puede parecer como cuidar nuestra carita adecuadamente,
-            y para eso estamos aquí, para demostrarte que no es tan complejo como parece. </h3>
+      <div>
+        <h2 class="section__title">Porque el estilo no tiene raza ni género</h2>
+      <h3 class="testimonial__title">
+        Entrar en el mundo Skincare puede parecer de buenas a primeras
+        abrumador. Limpiador, exfoliante, agua micelar, agua termal, tónico,
+        mascarilla... Nosotras sabemos lo confuso y complicado que puede parecer
+        como cuidar nuestra carita adecuadamente, y para eso estamos aquí, para
+        demostrarte que no es tan complejo como parece.
+      </h3>
 
-        <hr>
+      <h3 class="subtitle">
+        El primer paso para empezar hay que saber identificar que tipos de piel
+        tenemos (seca, normal, mixta, grasa):
+      </h3>
 
-        <h3> El primer paso para empezar hay que saber identificar que tipos de piel tenemos (seca, normal, mixta, grasa): </h3>
+      <hr />
 
+      <section class="container-tips">
+        <div class="tip left">
+          <h2 class="tip__title">Piel seca</h2>
+          <p class="tip__txt">
+            La piel seca se caracteriza por la falta de humedad en la misma, lo
+            que da una sensación de tirantez y rigidez. Se puede pelar y tienen
+            un aspecto apagado y blanco, y un tacto áspero. A veces suele tener
+            manchas y en ocasiones parece más envejecida de lo que realmente es,
+            además de que se ve muy afectada por los cambios climáticos
+          </p>
         </div>
+        <div class="tip right">
+          <h2 class="tip__title">Piel normal</h2>
+          <p class="tip__txt">
+            Este tipo de piel presenta una textura regular y no tiene
+            imperfecciones. Además, tiene un aspecto suave y limpio sin
+            necesidad de hacer nada. “Se caracteriza porque no tiene brillos y
+            el poro es pequeño. Las personas que poseen este tipo de piel tienen
+            un tono rosado y uniforme”.
+          </p>
         </div>
-        <section class="container-tips">
-            <div class="tip">
-                <h2 class="tip__title">Piel seca </h2>
-                <p class="tip__txt">La piel seca se caracteriza por la falta de humedad en la misma, lo que da una sensación de tirantez y rigidez. Se puede pelar y tienen un aspecto apagado y blanco, y un tacto áspero. A veces suele tener manchas y en ocasiones parece más
-                    envejecida de lo que realmente es, además de que se ve muy afectada por los cambios climáticos</p>
-            </div>
-            <p style="text-align: right">
-                <div class="tip">
-                    <h2 class="tip__title">Piel normal</h2>
-                    <p class="tip__txt">Este tipo de piel presenta una textura regular y no tiene imperfecciones. Además, tiene un aspecto suave y limpio sin necesidad de hacer nada. “Se caracteriza porque no tiene brillos y el poro es pequeño. Las personas que poseen este
-                        tipo de piel tienen un tono rosado y uniforme”.</p>
-                    <p>
-                </div>
-                </p>
-                </div>
-            </p>
-        </section>
+      </section>
 
-        <section class="container-tips">
-            <div class="tip">
-                <h2 class="tip__title">Piel mixta</h2>
-                <p class="tip__txt">Como la misma palabra dice, este tipo de piel está entre la piel normal y la piel grasa. La zona más grasa suele corresponder con la zona T (frente, nariz y barbilla), mientras que en las mejillas la piel es entre normal o seca.</p>
-            </div>
-            <p style="text-align: right">
-                <div class="tip">
-                    <h2 class="tip__title">Piel grasa</h2>
-                    <p class="tip__txt">Las personas que poseen la piel grasa tienen un aspecto brillante en toda la cara, debido a la elevada producción de sebo. El mayor problema de este tipo de piel son los granos y puntos negros. La especialista en dermofarmacia señala
-                        que “se caracterizan por tener un poro muy dilatado y un aspecto cetrino”.
-                    </p>
-                </div>
-            </p>
-        </section>
+      <section class="container-tips">
+        <div class="tip">
+          <h2 class="tip__title">Piel mixta</h2>
+          <p class="tip__txt">
+            Como la misma palabra dice, este tipo de piel está entre la piel
+            normal y la piel grasa. La zona más grasa suele corresponder con la
+            zona T (frente, nariz y barbilla), mientras que en las mejillas la
+            piel es entre normal o seca.
+          </p>
+        </div>
+        <!-- <p style="text-align: right"> -->
+        <div class="tip">
+          <h2 class="tip__title">Piel grasa</h2>
+          <p class="tip__txt">
+            Las personas que poseen la piel grasa tienen un aspecto brillante en
+            toda la cara, debido a la elevada producción de sebo. El mayor
+            problema de este tipo de piel son los granos y puntos negros. La
+            especialista en dermofarmacia señala que “se caracterizan por tener
+            un poro muy dilatado y un aspecto cetrino”.
+          </p>
+        </div>
+        <!-- </p> -->
+      </section>
 
-        <hr>
-
-        <p style="font-weight: 400;">Hay varios pasos a seguir a la hora de hacer tu rutina de skincare, a continuacion te daremos los 10 pasos para una rutina avanzada(de día): </p>
-
-        <ol start="1" style="text-align: left">
-            <li>Limpiador base aceite</li>
-            <li>Limpiador base agua</li>
-            <li>Exfoliante*</li>
-            <li>Tónico</li>
-            <li>Esencia</li>
-            <li>Suero / Ampoule</li>
-            <li>Mascarillas*</li>
-            <li>Contorno de ojos</li>
-            <li>Hidratante</li>
-            <li>Protector solar</li>
-            </li>
-        </ol>
-
-        <p style="text-align: left"> Los puntos que tiene un (*) al final, son pasos que no se deben realizar todos los días, solo 1 o 2 veces por semana.</p>
-
-        <hr>
-
-        <p style="font-weight: 400;">Hay varios pasos a seguir a la hora de hacer tu rutina de skincare, a continuacion te daremos los 10 pasos para una rutina avanzada(de noche): </p>
-
-        <ol start="1" style="text-align: left">
-            <li>Limpiador base aceite</li>
-            <li>Limpiador base agua</li>
-            <li>Exfoliante*</li>
-            <li>Tónico</li>
-            <li>Esencia</li>
-            <li>Suero / Ampoule</li>
-            <li>Mascarillas*</li>
-            <li>Contorno de ojos</li>
-            <li>Hidratante</li>
-            <li>Sleeping pack o mascarilla nocturna*</li>l
-            </li>
-        </ol>
-        <p style="text-align: left"> Los puntos que tiene un (*) al final, son pasos que no se deben realizar todos los días, solo 1 o 2 veces por semana.</p>
-        <p class="testimonial__txt"></p>
+      <section class="container-links">
+        <hr />
+        <p style="font-weight: 400">
+          Hay varios pasos a seguir a la hora de hacer tu rutina de skincare, a
+          continuacion te daremos los 10 pasos para una rutina avanzada(de día):
         </p>
 
-        <h2 class="main-title" style="text-align: left">Estos productos son aptos para todo tipo de piel:</h2>
+        <ol start="1" style="text-align: left">
+          <li>Limpiador base aceite</li>
+          <li>Limpiador base agua</li>
+          <li>Exfoliante*</li>
+          <li>Tónico</li>
+          <li>Esencia</li>
+          <li>Suero / Ampoule</li>
+          <li>Mascarillas*</li>
+          <li>Contorno de ojos</li>
+          <li>Hidratante</li>
+          <li>Protector solar</li>
+        </ol>
+
+        <p style="text-align: left">
+          Los puntos que tiene un (*) al final, son pasos que no se deben
+          realizar todos los días, solo 1 o 2 veces por semana.
+        </p>
+
+        <hr />
+
+        <p style="font-weight: 400">
+          Hay varios pasos a seguir a la hora de hacer tu rutina de skincare, a
+          continuacion te daremos los 10 pasos para una rutina avanzada(de
+          noche):
+        </p>
+
+        <ol start="1" style="text-align: left">
+          <li>Limpiador base aceite</li>
+          <li>Limpiador base agua</li>
+          <li>Exfoliante*</li>
+          <li>Tónico</li>
+          <li>Esencia</li>
+          <li>Suero / Ampoule</li>
+          <li>Mascarillas*</li>
+          <li>Contorno de ojos</li>
+          <li>Hidratante</li>
+          <li>Sleeping pack o mascarilla nocturna*</li>
+          l
+        </ol>
+        <p style="text-align: left">
+          Los puntos que tiene un (*) al final, son pasos que no se deben
+          realizar todos los días, solo 1 o 2 veces por semana.
+        </p>
+        <p class="testimonial__txt"></p>
+
+        <h2 class="main-title" style="text-align: left">
+          Estos productos son aptos para todo tipo de piel:
+        </h2>
+      </div>
+      </section>
+
+      <div class="cardsContainer">
+        <div class="iframe__container">
+          <div class="product" id="65">
+            <img src="../assets/img/zero2.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Clean It Zero</h3>
+              <p class="product__txt">Limpiador a base de aceite</p>
+              <span class="product__price">$600.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="66">
+            <img src="../assets/img/cerave.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Cerave Cleanser</h3>
+              <p class="product__txt">Limpiador a base de agua</p>
+              <span class="product__price">$300.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="67">
+            <img src="../assets/img/thayers.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Facial Toner Thayers</h3>
+              <p class="product__txt">Tónico facial</p>
+              <span class="product__price">$320.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="68">
+            <img src="../assets/img/gm.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">
+                Overnight Exfoliating Treatment Good Molecules
+              </h3>
+              <p class="product__txt">Exfoliante químico</p>
+              <span class="product__price">$220.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="69">
+            <img src="../assets/img/suero.png" />
+            <div class="product__description">
+              <h3 class="product__title">Hyaluronic Acid The Ordinary</h3>
+              <p class="product__txt">Suero</p>
+              <span class="product__price">$400.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="70">
+            <img src="../assets/img/mask.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Mascarillas Tony Moly</h3>
+              <p class="product__txt">Sheet Mask</p>
+              <span class="product__price">$40.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="71">
+            <img src="../assets/img/ojos.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Contorno Ojos Cerave</h3>
+              <p class="product__txt">Contorno de ojos</p>
+              <span class="product__price">$289.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="72">
+            <img src="../assets/img/neutrogena.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Hydro Boost Neutrogena</h3>
+              <p class="product__txt">Hidratante</p>
+              <span class="product__price">$290.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="73">
+            <img src="../assets/img/isdin.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">Fusion Water Isdin</h3>
+              <p class="product__txt">Protector solar</p>
+              <span class="product__price">$437.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+          <div class="product" id="74">
+            <img src="../assets/img/mask2.jpg" />
+            <div class="product__description">
+              <h3 class="product__title">
+                Ultra Facial Overnight Hydrating Masque Kiehl's
+              </h3>
+              <p class="product__txt">Mascarilla nocturna</p>
+              <span class="product__price">$770.00</span>
+            </div>
+            <i class="product__icon fas fa-cart-plus"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="end-message">
+        <h2>
+            ¡Esperamos que nuestras recomendaciones te hayan sido de ayuda, no dudes
+            en contactarnos para resolver cualquiera de tus dudas!
+          </h2>
+      </div>
     </section>
 
-
-   <div class="cardsContainer">
-    <div class="main__title">
-        <h2>Te presentamos nuestros favoritos</h2>
-    </div>
-    <div class="iframe__container">
-        <div class="product" id="65">
-            <img src="../assets/img/zero2.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Clean It Zero</h3>
-                <P class="product__txt">Limpiador a base de aceite</P>
-                <span class="product__price">$600.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="66">
-            <img src="../assets/img/cerave.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Cerave Cleanser</h3>
-                <P class="product__txt">Limpiador a base de agua</P>
-                <span class="product__price">$300.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="67">
-            <img src="../assets/img/thayers.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Facial Toner Thayers</h3>
-                <P class="product__txt">Tónico facial</P>
-                <span class="product__price">$320.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="68">
-            <img src="../assets/img/gm.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Overnight Exfoliating Treatment Good Molecules</h3>
-                <P class="product__txt">Exfoliante químico</P>
-                <span class="product__price">$220.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="69">
-            <img src="../assets/img/suero.png">
-            <div class="product__description">
-                <h3 class="product__title">Hyaluronic Acid The Ordinary</h3>
-                <P class="product__txt">Suero</P>
-                <span class="product__price">$400.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="70">
-            <img src="../assets/img/mask.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Mascarillas Tony Moly</h3>
-                <P class="product__txt">Sheet Mask</P>
-                <span class="product__price">$40.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="71">
-            <img src="../assets/img/ojos.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Contorno Ojos Cerave</h3>
-                <P class="product__txt">Contorno de ojos</P>
-                <span class="product__price">$289.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="72">
-            <img src="../assets/img/neutrogena.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Hydro Boost Neutrogena</h3>
-                <P class="product__txt">Hidratante</P>
-                <span class="product__price">$290.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="73">
-            <img src="../assets/img/isdin.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Fusion Water Isdin</h3>
-                <P class="product__txt">Protector solar</P>
-                <span class="product__price">$437.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
-        <div class="product" id="74">
-            <img src="../assets/img/mask2.jpg">
-            <div class="product__description">
-                <h3 class="product__title">Ultra Facial Overnight Hydrating Masque Kiehl's</h3>
-                <P class="product__txt">Mascarilla nocturna</P>
-                <span class="product__price">$770.00</span>
-            </div>
-            <i class="product__icon fas fa-cart-plus"></i>
-        </div>
- </div>
-   </div>
-
-
-    <h2 style="text-align:left; padding: 10px 30px;"> ¡Esperamos que nuestras recomendaciones te hayan sido de ayuda, no dudes en contactarnos para resolver cualquiera de tus dudas!</h2>
     <footer class="main-footer">
         <div class="footer__section">
-            <h2 class="footer__title">Sobre Nosotros</h2>
-            <p class="footer__txt">Somos una tienda que ofrece gran variedad de productos de belleza y cuidado de piel, asi como tambien podrás encontrar tips y reseñas sobre nuestra mercancía.</p>
-            <div class="footer__section">
-                <h2 class="footer__title">Ubicación :</h2>
-                <p class="footer__txt">Ciudad Victoria, Tamaulipas. Mexico </p>
-                <h2 class="footer__title">Contacto</h2>
-                <p class="footer__txt">Teléfono : 8341164846</p>
-                <p class="footer__txt">Email : beautyface@gmail.com</p>
-            </div>
-            <div class="footer__section">
-                <h2 class="footer__title">Quick Links</h2>
-                <a href="./login.html" class="footer__link" >REGISTRATE</a>
-                <a href="./nosotros.html" class="footer__link" >NOSOTROS</a>
-                <a href="./recomendaciones.html" class="footer__link" >RECOMENDACIONES</a>
-                <a href="./catalogo.html" class="footer__link">PRODUCTOS</a>
-            </div>
-            <div class="footer__section">
-                <h2 class="footer__title">Registrate para recibir ofertas</h2>
-                <p class="footer__txt">Únete a nuestro CLUB DE LA BELLEZA y entérate de Promociones, Eventos, Nuevos Productos y mucho más...</p>
-
-            </div>
+          <h2 class="footer__title">Sobre Nosotros:</h2>
+          <p class="footer__txt">
+            Somos una tienda que ofrece gran variedad de productos de belleza y
+            cuidado de piel, asi como tambien podrás encontrar tips y reseñas
+            sobre nuestra mercancía.
+          </p>
         </div>
-    </footer>
-</body>
+        <div class="footer__section">
+          <h2 class="footer__title">Ubicación:</h2>
+          <p class="footer__txt">Ciudad Victoria, Tamaulipas. Mexico</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Contacto:</h2>
+          <p class="footer__txt">Teléfono : 8341164846</p>
+          <p class="footer__txt">Email : beautyface@gmail.com</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Quick Links:</h2>
+          <div class="links">
+            <a href="./html/login.html" class="footer__link" target="”_blank”"
+              >REGISTRATE</a
+            >
+            <a href="./html/nosotros.html" class="footer__link" target="”_blank”"
+              >NOSOTROS</a
+            >
+            <a
+              href="./html/recomendaciones.html"
+              class="footer__link"
+              target="”_blank”"
+              >RECOMENDACIONES</a
+            >
+            <a href="./html/catalogo.html" class="footer__link">PRODUCTOS</a>
+          </div>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Registrate:</h2>
+          <p class="footer__txt">
+            Únete a nuestro CLUB DE LA BELLEZA y entérate de Promociones, Eventos,
+            Nuevos Productos y mucho más...
+          </p>
+        </div>
+      </footer>
+  </body>
+</html>
