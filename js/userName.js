@@ -1,7 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const localStorageSession = window.localStorage.getItem('BeautyFaceSession')
-  const user = document.getElementById('usuario')
+document.addEventListener("DOMContentLoaded", () => {
+  const localStorageSession = window.localStorage.getItem("BeautyFaceSession");
+  const user = document.getElementById("usuario");
   if (user) {
-    if (localStorageSession) { user.innerHTML = localStorageSession } else user.innerHTML = 'Invitado'
+    if (localStorageSession) {
+      user.innerHTML = localStorageSession;
+    } else user.innerHTML = "Invitado";
   }
-})
+});
